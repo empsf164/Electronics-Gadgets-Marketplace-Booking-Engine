@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Host Setup & Bench Availability — VOLTARA</title>
+  <meta name="description" content="Configure host laboratory profile, customized repair pricing, weekly bench availability, and escrow deposit rules.">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="voltara-navbar">
+    <div class="container-custom h-100 d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo" aria-label="Voltara Home">
+        <div class="brand-symbol"><i class="bi bi-cpu-fill"></i></div>
+        <div class="d-flex align-items-center">
+          <span class="brand-text">VOLTARA</span>
+          <span class="brand-tag">HOST PORTAL</span>
+        </div>
+      </a>
+
+      <nav class="d-none d-lg-block">
+        <ul class="nav-menu-list">
+          <li><a href="index.html" class="nav-link-custom">Marketplace Home</a></li>
+          <li><a href="explore.html" class="nav-link-custom">Explore</a></li>
+          <li><a href="host-profile.html?host=apex-lab" class="nav-link-custom">View Public Profile</a></li>
+          <li><a href="host-setup.html" class="nav-link-custom active">Host Setup</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+        <button type="button" id="btnSaveHostSettingsTop" class="btn-voltara-primary">
+          <i class="bi bi-floppy"></i> <span>Save Configuration</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Setup Container -->
+  <main class="py-5">
+    <div class="container-custom">
+      
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+        <div>
+          <span class="badge bg-primary-subtle text-primary text-uppercase letter-spacing-1 mb-2">Provider Management</span>
+          <h1 class="font-heading fw-bold fs-2 mb-1">Host Setup & Bench Availability</h1>
+          <p class="text-secondary small mb-0">Configure your laboratory profile, active workbench hours, custom service rates, and deposit terms.</p>
+        </div>
+        <div class="d-flex gap-2">
+          <a href="host-profile.html?host=apex-lab" class="btn btn-sm btn-outline-secondary">
+            <i class="bi bi-eye"></i> View Live Profile
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- LEFT: Setup Forms (Tabs / Sections) -->
+        <div class="col-lg-7">
+          
+          <!-- SECTION 1: BUSINESS PROFILE -->
+          <div class="voltara-card bg-surface-elevated p-4 border border-subtle rounded-4 mb-4">
+            <h5 class="font-heading fw-bold mb-3 fs-6 d-flex align-items-center gap-2">
+              <i class="bi bi-shop text-primary"></i> 1. Laboratory & Provider Profile
+            </h5>
+            
+            <div class="row g-3">
+              <div class="col-md-8">
+                <label class="input-label-custom">Business / Host Name</label>
+                <input type="text" id="setupHostName" class="form-control-custom" value="Apex Precision Tech Labs">
+              </div>
+              <div class="col-md-4">
+                <label class="input-label-custom">Facility Type</label>
+                <select id="setupHostType" class="form-select-custom">
+                  <option value="service-center" selected>Service Center Lab</option>
+                  <option value="mobile-tech">Mobile Van Doorstep</option>
+                  <option value="independent-specialist">Independent Specialist</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="input-label-custom">Specialization Tagline</label>
+                <input type="text" id="setupHostTagline" class="form-control-custom" value="Master Micro-Soldering & Tier-1 Cleanroom Facility">
+              </div>
+
+              <div class="col-md-6">
+                <label class="input-label-custom">Physical Location / Service Hub</label>
+                <input type="text" id="setupHostLocation" class="form-control-custom" value="Tech Quarter, Silicon Boulevard (Hub #4)">
+              </div>
+              <div class="col-md-6">
+                <label class="input-label-custom">Direct Technician Phone</label>
+                <input type="text" id="setupHostPhone" class="form-control-custom" value="+1 (555) 839-2011">
+              </div>
+
+              <div class="col-12">
+                <label class="input-label-custom">Laboratory Bio & Equipment Description</label>
+                <textarea id="setupHostAbout" rows="3" class="form-control-custom">Equipped with Class 100 laminar hoods, Weller micro-soldering, and FLIR thermal analyzers. Over 9 years of precision micro-soldering experience.</textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2: SERVICES & PRICING -->
+          <div class="voltara-card bg-surface-elevated p-4 border border-subtle rounded-4 mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="font-heading fw-bold mb-0 fs-6 d-flex align-items-center gap-2">
+                <i class="bi bi-tag text-success"></i> 2. Services & Base Pricing
+              </h5>
+              <button type="button" class="btn btn-sm btn-outline-primary" id="btnAddServiceRow">
+                <i class="bi bi-plus-lg"></i> Add Custom Service
+              </button>
+            </div>
+
+            <div class="d-flex flex-column gap-3" id="setupServicesList">
+              <div class="p-3 rounded-3 bg-surface-subtle border border-subtle d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="fw-bold text-primary-emphasis small">Ultra Retina & OLED Screen Swap</div>
+                  <div class="text-muted" style="font-size: 0.75rem;">Est. Duration: 2 Hours</div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="small text-muted">₹</span>
+                  <input type="number" class="form-control-custom py-1 px-2 text-end font-mono" style="width: 100px;" value="3899">
+                </div>
+              </div>
+
+              <div class="p-3 rounded-3 bg-surface-subtle border border-subtle d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="fw-bold text-primary-emphasis small">OEM High-Capacity Battery Swap</div>
+                  <div class="text-muted" style="font-size: 0.75rem;">Est. Duration: 45 Mins</div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="small text-muted">₹</span>
+                  <input type="number" class="form-control-custom py-1 px-2 text-end font-mono" style="width: 100px;" value="1999">
+                </div>
+              </div>
+
+              <div class="p-3 rounded-3 bg-surface-subtle border border-subtle d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="fw-bold text-primary-emphasis small">Ultrasonic Liquid Damage Rescue</div>
+                  <div class="text-muted" style="font-size: 0.75rem;">Est. Duration: 24 Hours</div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="small text-muted">₹</span>
+                  <input type="number" class="form-control-custom py-1 px-2 text-end font-mono" style="width: 100px;" value="3499">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 3: AVAILABILITY & WORKING HOURS MATRIX -->
+          <div class="voltara-card bg-surface-elevated p-4 border border-subtle rounded-4 mb-4">
+            <h5 class="font-heading fw-bold mb-3 fs-6 d-flex align-items-center gap-2">
+              <i class="bi bi-clock-history text-info"></i> 3. Bench Availability & Slot Rules
+            </h5>
+
+            <!-- Working Days Toggles -->
+            <label class="input-label-custom">Operating Days Matrix</label>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <label class="btn btn-sm btn-outline-primary active day-toggle-btn">
+                <input type="checkbox" class="d-none" checked> Mon
+              </label>
+              <label class="btn btn-sm btn-outline-primary active day-toggle-btn">
+                <input type="checkbox" class="d-none" checked> Tue
+              </label>
+              <label class="btn btn-sm btn-outline-primary active day-toggle-btn">
+                <input type="checkbox" class="d-none" checked> Wed
+              </label>
+              <label class="btn btn-sm btn-outline-primary active day-toggle-btn">
+                <input type="checkbox" class="d-none" checked> Thu
+              </label>
+              <label class="btn btn-sm btn-outline-primary active day-toggle-btn">
+                <input type="checkbox" class="d-none" checked> Fri
+              </label>
+              <label class="btn btn-sm btn-outline-primary active day-toggle-btn">
+                <input type="checkbox" class="d-none" checked> Sat
+              </label>
+              <label class="btn btn-sm btn-outline-secondary day-toggle-btn">
+                <input type="checkbox" class="d-none"> Sun
+              </label>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label class="input-label-custom">Opening Time</label>
+                <input type="time" id="setupOpenTime" class="form-control-custom" value="08:30">
+              </div>
+              <div class="col-sm-6">
+                <label class="input-label-custom">Closing Time</label>
+                <input type="time" id="setupCloseTime" class="form-control-custom" value="19:30">
+              </div>
+              <div class="col-sm-6">
+                <label class="input-label-custom">Bench Slot Duration</label>
+                <select id="setupSlotDuration" class="form-select-custom">
+                  <option value="30">30 Minutes</option>
+                  <option value="45">45 Minutes</option>
+                  <option value="60" selected>60 Minutes (Recommended)</option>
+                  <option value="90">90 Minutes</option>
+                  <option value="120">120 Minutes (Heavy Soldering)</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label class="input-label-custom">Afternoon Break / Cleanroom Purge</label>
+                <input type="text" class="form-control-custom" value="12:45 PM - 01:30 PM">
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 4: BOOKING & DEPOSIT RULES -->
+          <div class="voltara-card bg-surface-elevated p-4 border border-subtle rounded-4 mb-4">
+            <h5 class="font-heading fw-bold mb-3 fs-6 d-flex align-items-center gap-2">
+              <i class="bi bi-shield-lock text-warning"></i> 4. Booking & Escrow Deposit Rules
+            </h5>
+
+            <div class="row g-3">
+              <div class="col-md-4">
+                <label class="input-label-custom">Required Deposit %</label>
+                <select id="setupDepositPct" class="form-select-custom">
+                  <option value="15">15% Deposit</option>
+                  <option value="20">20% Deposit</option>
+                  <option value="25" selected>25% Deposit (Standard)</option>
+                  <option value="30">30% Deposit</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="input-label-custom">Advance Window</label>
+                <select class="form-select-custom">
+                  <option value="7">Up to 7 Days Ahead</option>
+                  <option value="14" selected>Up to 14 Days Ahead</option>
+                  <option value="30">Up to 30 Days Ahead</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="input-label-custom">Free Cancellation</label>
+                <select class="form-select-custom">
+                  <option value="2" selected>Up to 2h Prior</option>
+                  <option value="4">Up to 4h Prior</option>
+                  <option value="24">Up to 24h Prior</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end">
+            <button type="button" id="btnSaveHostSettingsBottom" class="btn-voltara-primary py-3 px-5 fs-6">
+              <i class="bi bi-floppy"></i> Save & Publish Availability
+            </button>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: LIVE REAL-TIME PREVIEW PANEL -->
+        <div class="col-lg-5">
+          <div class="voltara-card bg-surface-elevated p-4 border border-primary-subtle rounded-4 shadow-lg sticky-top" style="top: 96px;">
+            
+            <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-subtle">
+              <span class="badge bg-primary-subtle text-primary">Live Customer Preview</span>
+              <span class="badge bg-success-subtle text-success small"><i class="bi bi-lightning-charge-fill"></i> Synced</span>
+            </div>
+
+            <!-- Preview Card -->
+            <div class="p-3 rounded-3 bg-surface-subtle border border-subtle mb-3">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=120&q=80" class="rounded-circle" width="50" height="50" alt="Host Avatar">
+                <div>
+                  <h5 class="font-heading fw-bold mb-0 fs-6 text-primary-emphasis" id="previewHostName">Apex Precision Tech Labs</h5>
+                  <div class="small text-muted" id="previewHostTagline">Master Micro-Soldering Lab</div>
+                </div>
+              </div>
+              <div class="small text-secondary mb-2" id="previewHostLocation"><i class="bi bi-geo-alt me-1 text-primary"></i> Silicon Boulevard (Hub #4)</div>
+              <div class="d-flex justify-content-between pt-2 border-top border-subtle small">
+                <span class="text-success fw-bold">4.98 ★ (342 reviews)</span>
+                <span class="text-primary font-semibold" id="previewDepositDisplay">25% Deposit Required</span>
+              </div>
+            </div>
+
+            <!-- Preview Generated Slot Queue -->
+            <div class="mb-3">
+              <div class="small text-muted fw-bold text-uppercase letter-spacing-1 mb-2">Customer Booking Slots Generated</div>
+              <div class="d-flex flex-wrap gap-2" id="previewSlotsGrid">
+                <span class="badge bg-surface-subtle text-primary border border-subtle p-2">08:30 AM (Available)</span>
+                <span class="badge bg-surface-subtle text-primary border border-subtle p-2">09:30 AM (Available)</span>
+                <span class="badge bg-warning-subtle text-warning border border-subtle p-2">10:30 AM (1 Left)</span>
+                <span class="badge bg-surface-subtle text-primary border border-subtle p-2">11:30 AM (Available)</span>
+                <span class="badge bg-surface-subtle text-primary border border-subtle p-2">01:30 PM (Available)</span>
+                <span class="badge bg-surface-subtle text-primary border border-subtle p-2">02:30 PM (Available)</span>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-3 bg-primary-subtle border border-primary-subtle small text-secondary">
+              <strong class="text-primary d-block mb-1"><i class="bi bi-info-circle me-1"></i> Live Schedule Rule</strong>
+              Changes saved here immediately update customer booking availability on the marketplace and in the calendar widget.
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="voltara-footer">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 small text-secondary">
+        <div>© 2026 VOLTARA Inc. "Discover Better Tech. Book Smarter Service."</div>
+        <div class="d-flex gap-3">
+          <a href="index.html" class="text-secondary">Home</a>
+          <a href="explore.html" class="text-secondary">Explore</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const nameInput = document.getElementById('setupHostName');
+      const taglineInput = document.getElementById('setupHostTagline');
+      const locationInput = document.getElementById('setupHostLocation');
+      const depositSelect = document.getElementById('setupDepositPct');
+
+      const previewName = document.getElementById('previewHostName');
+      const previewTagline = document.getElementById('previewHostTagline');
+      const previewLocation = document.getElementById('previewHostLocation');
+      const previewDeposit = document.getElementById('previewDepositDisplay');
+
+      function syncPreview() {
+        if (previewName && nameInput) previewName.textContent = nameInput.value;
+        if (previewTagline && taglineInput) previewTagline.textContent = taglineInput.value;
+        if (previewLocation && locationInput) previewLocation.innerHTML = `<i class="bi bi-geo-alt me-1 text-primary"></i> ${locationInput.value}`;
+        if (previewDeposit && depositSelect) previewDeposit.textContent = `${depositSelect.value}% Deposit Required`;
+      }
+
+      nameInput.addEventListener('input', syncPreview);
+      taglineInput.addEventListener('input', syncPreview);
+      locationInput.addEventListener('input', syncPreview);
+      depositSelect.addEventListener('change', syncPreview);
+
+      // Day buttons toggle
+      document.querySelectorAll('.day-toggle-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          btn.classList.toggle('active');
+          btn.classList.toggle('btn-outline-primary');
+          btn.classList.toggle('btn-outline-secondary');
+        });
+      });
+
+      // Add custom service row
+      document.getElementById('btnAddServiceRow').addEventListener('click', () => {
+        const container = document.getElementById('setupServicesList');
+        const newRow = document.createElement('div');
+        newRow.className = 'p-3 rounded-3 bg-surface-subtle border border-subtle d-flex justify-content-between align-items-center animate-fade-in';
+        newRow.innerHTML = `
+          <div>
+            <input type="text" class="form-control-custom py-1 px-2 fw-bold text-primary-emphasis small mb-1" value="Custom Logic Board Diagnostics" placeholder="Service Name">
+            <div class="text-muted" style="font-size: 0.75rem;">Est. Duration: 1 Hour</div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <span class="small text-muted">₹</span>
+            <input type="number" class="form-control-custom py-1 px-2 text-end font-mono" style="width: 100px;" value="1499">
+            <button type="button" class="btn btn-sm btn-link text-danger p-0" onclick="this.closest('.p-3').remove()">&times;</button>
+          </div>
+        `;
+        container.appendChild(newRow);
+      });
+
+      // Save handler
+      const handleSave = () => {
+        VoltaraToast.show({
+          title: "Configuration Saved",
+          message: "Host availability schedule and service rates updated.",
+          type: "success"
+        });
+      };
+
+      document.getElementById('btnSaveHostSettingsTop').addEventListener('click', handleSave);
+      document.getElementById('btnSaveHostSettingsBottom').addEventListener('click', handleSave);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmed — VOLTARA</title>
+  <meta name="description" content="Your electronics service bench slot is secured. View intake pass, deposit receipt, and calendar link.">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="voltara-navbar">
+    <div class="container-custom h-100 d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo" aria-label="Voltara Home">
+        <div class="brand-symbol"><i class="bi bi-cpu-fill"></i></div>
+        <div class="d-flex align-items-center">
+          <span class="brand-text">VOLTARA</span>
+          <span class="brand-tag">CONFIRMED</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+        <a href="explore.html" class="btn-voltara-outline">
+          <i class="bi bi-grid-fill"></i> Explore Marketplace
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONFIRMATION RECEIPT
+       ========================================================================== -->
+  <main class="py-5">
+    <div class="container-custom max-w-900 mx-auto">
+      
+      <!-- Top Success Status Banner -->
+      <div class="text-center mb-4">
+        <div class="d-inline-flex align-items-center justify-content-center bg-success text-white rounded-circle mb-3 shadow-lg" style="width: 72px; height: 72px; font-size: 2rem;">
+          <i class="bi bi-check-lg"></i>
+        </div>
+        <span class="badge bg-success-subtle text-success py-2 px-3 rounded-pill mb-2">Deposit Authorized & Escrow Locked</span>
+        <h1 class="font-heading fw-bold fs-2 mb-1">Booking Confirmed!</h1>
+        <p class="text-secondary small">Your bench slot has been reserved. A confirmation SMS & email receipt has been dispatched.</p>
+      </div>
+
+      <!-- Main Receipt Card -->
+      <div class="voltara-card bg-surface-elevated p-4 p-md-5 border border-subtle rounded-4 shadow-lg mb-4">
+        
+        <!-- Header Strip -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center pb-4 mb-4 border-bottom border-subtle gap-3">
+          <div>
+            <div class="text-muted small text-uppercase letter-spacing-1">Booking Reference ID</div>
+            <div class="fs-4 font-mono fw-bold text-primary" id="confirmBookingId">VLT-88492-X</div>
+          </div>
+          <div class="text-md-end">
+            <span class="badge bg-success text-white py-2 px-3"><i class="bi bi-shield-check me-1"></i> 25% Deposit Held in Escrow</span>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          
+          <!-- Left: Service & Host details -->
+          <div class="col-md-7">
+            <h5 class="font-heading fw-bold mb-3 fs-6 text-muted text-uppercase letter-spacing-1">Service & Hardware Details</h5>
+            
+            <div class="p-3 rounded-3 bg-surface-subtle border border-subtle mb-3">
+              <div class="small text-muted">Service Scheduled</div>
+              <div class="fw-bold text-primary-emphasis fs-5 mb-1" id="confirmServiceTitle">Ultra Retina & OLED Screen Replacement</div>
+              <div class="small text-secondary">Device: <strong class="text-primary-emphasis" id="confirmDeviceModel">Apple iPhone 15 Pro Max</strong></div>
+            </div>
+
+            <div class="p-3 rounded-3 bg-surface-subtle border border-subtle mb-3">
+              <div class="small text-muted">Assigned Host Specialist</div>
+              <div class="fw-bold text-primary-emphasis" id="confirmHostName">Apex Precision Tech Labs</div>
+              <div class="small text-secondary" id="confirmHostLocation">Tech Quarter, Silicon Boulevard (Hub #4)</div>
+            </div>
+
+            <div class="p-3 rounded-3 bg-surface-subtle border border-subtle">
+              <div class="small text-muted">Appointment Slot</div>
+              <div class="fw-bold text-primary fs-5" id="confirmDateTime">Tomorrow at 10:30 AM</div>
+              <div class="small text-success"><i class="bi bi-lightning-charge"></i> Priority Bench Intake</div>
+            </div>
+          </div>
+
+          <!-- Right: Digital QR Intake Pass & Financials -->
+          <div class="col-md-5">
+            <div class="p-4 rounded-3 bg-surface-subtle border border-subtle text-center mb-3">
+              <div class="small text-muted text-uppercase letter-spacing-1 mb-2">Digital Intake QR Pass</div>
+              <div class="p-2 bg-white d-inline-block rounded-2 shadow-sm mb-2">
+                <i class="bi bi-qr-code text-dark" style="font-size: 110px; line-height: 1;"></i>
+              </div>
+              <div class="small text-muted font-mono" id="confirmPassCode">PASS-VLT-88492</div>
+              <div class="small text-secondary mt-1">Show this QR on hardware drop-off</div>
+            </div>
+
+            <div class="p-3 rounded-3 bg-surface-subtle border border-subtle">
+              <div class="d-flex justify-content-between py-1 small border-bottom border-subtle">
+                <span class="text-secondary">Estimated Total</span>
+                <span class="fw-bold text-primary-emphasis" id="confirmGrandTotal">₹5,246</span>
+              </div>
+              <div class="d-flex justify-content-between py-1 small border-bottom border-subtle text-success">
+                <span>Deposit Paid Today (25%)</span>
+                <span class="fw-bold" id="confirmDepositPaid">₹1,312</span>
+              </div>
+              <div class="d-flex justify-content-between py-1 small fw-bold">
+                <span class="text-secondary">Due After Testing</span>
+                <span class="text-primary" id="confirmRemainingBalance">₹3,934</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Next Steps Protocol Timeline -->
+        <div class="p-4 rounded-3 bg-surface-subtle border border-subtle mb-4">
+          <h5 class="font-heading fw-bold mb-3 fs-6">What Happens Next?</h5>
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-3">
+              <div class="small text-muted fw-bold">01. Drop-off / Arrival</div>
+              <div class="small text-secondary">Bring device or expect technician at scheduled time slot.</div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="small text-muted fw-bold">02. 72-Point Audit</div>
+              <div class="small text-secondary">Pre-repair baseline tests log existing hardware health.</div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="small text-muted fw-bold">03. Cleanroom Repair</div>
+              <div class="small text-secondary">OEM assembly install & TrueTone serialization.</div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="small text-muted fw-bold">04. Inspect & Settle</div>
+              <div class="small text-secondary">Test device in person, then release remaining 75% balance.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons Bar -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 pt-3 border-top border-subtle">
+          <div class="d-flex flex-wrap gap-2">
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="btnDownloadReceipt">
+              <i class="bi bi-file-earmark-pdf"></i> Download PDF Receipt
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="btnAddToCalendar">
+              <i class="bi bi-calendar-plus"></i> Add to Calendar
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="btnContactHostModal" data-bs-toggle="modal" data-bs-target="#contactHostModal">
+              <i class="bi bi-chat-dots"></i> Contact Host
+            </button>
+          </div>
+
+          <a href="explore.html" class="btn-voltara-primary btn-sm">
+            <span>Marketplace Home</span> <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Contact Host Modal -->
+  <div class="modal fade" id="contactHostModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-surface-elevated border border-medium shadow-lg rounded-4">
+        <div class="modal-header border-bottom border-subtle p-3">
+          <h5 class="modal-title font-heading fw-bold fs-6"><i class="bi bi-chat-dots text-primary me-2"></i> Message Apex Tech Labs</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="small text-secondary mb-3">Direct link with bench technician handling Booking #<strong class="text-primary-emphasis" id="modalBookingIdRef">VLT-88492-X</strong>.</div>
+          <div class="mb-3">
+            <label class="input-label-custom">Direct Message</label>
+            <textarea id="modalHostMessage" rows="4" class="form-control-custom" placeholder="e.g. Can you please keep the original broken glass for my inspection?"></textarea>
+          </div>
+          <button type="button" class="btn-voltara-primary w-100 py-2 justify-content-center" id="btnSendHostMessage">
+            <i class="bi bi-send"></i> Send Message to Host Bench
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="voltara-footer">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 small text-secondary">
+        <div>© 2026 VOLTARA Inc. "Discover Better Tech. Book Smarter Service."</div>
+        <div class="d-flex gap-3">
+          <a href="about.html" class="text-secondary">Escrow Protection</a>
+          <a href="contact.html" class="text-secondary">Help Concierge</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/pricing.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Confirmation Reader -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Read saved booking from localStorage
+      const savedData = localStorage.getItem('voltara_latest_booking');
+      let booking = null;
+      if (savedData) {
+        try {
+          booking = JSON.parse(savedData);
+        } catch(e) {}
+      }
+
+      if (booking) {
+        document.getElementById('confirmBookingId').textContent = booking.bookingId;
+        document.getElementById('modalBookingIdRef').textContent = booking.bookingId;
+        document.getElementById('confirmPassCode').textContent = `PASS-${booking.bookingId}`;
+        document.getElementById('confirmServiceTitle').textContent = booking.service ? booking.service.title : "Ultra Retina Screen Swap";
+        document.getElementById('confirmDeviceModel').textContent = booking.deviceModel || "iPhone 15 Pro Max";
+        document.getElementById('confirmHostName').textContent = booking.host ? booking.host.name : "Apex Precision Tech Labs";
+        document.getElementById('confirmHostLocation').textContent = booking.host ? booking.host.location : "Tech Quarter, Silicon Boulevard";
+        document.getElementById('confirmDateTime').textContent = `${booking.date} at ${booking.timeSlot}`;
+        
+        if (booking.quote) {
+          document.getElementById('confirmGrandTotal').textContent = booking.quote.formattedGrandTotal;
+          document.getElementById('confirmDepositPaid').textContent = booking.quote.formattedDeposit;
+          document.getElementById('confirmRemainingBalance').textContent = booking.quote.formattedRemaining;
+        }
+      }
+
+      // Actions
+      document.getElementById('btnDownloadReceipt').addEventListener('click', () => {
+        VoltaraToast.show({
+          title: "PDF Receipt Generated",
+          message: "Tax invoice receipt downloaded to your files.",
+          type: "success"
+        });
+      });
+
+      document.getElementById('btnAddToCalendar').addEventListener('click', () => {
+        VoltaraToast.show({
+          title: "Calendar Synchronized",
+          message: "Bench intake appointment added to your calendar.",
+          type: "info"
+        });
+      });
+
+      document.getElementById('btnSendHostMessage').addEventListener('click', () => {
+        const msg = document.getElementById('modalHostMessage').value;
+        if (!msg.trim()) return;
+        
+        const modalEl = document.getElementById('contactHostModal');
+        const modal = bootstrap.Modal.getInstance(modalEl);
+        if (modal) modal.hide();
+
+        VoltaraToast.show({
+          title: "Message Dispatched",
+          message: "The lab technician has received your note.",
+          type: "success"
+        });
+        document.getElementById('modalHostMessage').value = '';
+      });
+    });
+  </script>
+</body>
+</html>

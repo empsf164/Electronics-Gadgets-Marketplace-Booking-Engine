@@ -1,0 +1,203 @@
+/* ==========================================================================
+   VOLTARA - Responsive Stylesheet (responsive.css)
+   Mobile-First & Fluid Breakpoint Adaptations
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   DESKTOP & LARGE SCREENS (>= 1200px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .hero-headline {
+    font-size: 3.5rem;
+    line-height: 1.15;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MEDIUM TO LARGE LAPTOPS (992px to 1199px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+  .nav-dropdown-menu.mega-menu {
+    min-width: 460px;
+  }
+
+  .nav-menu-list {
+    gap: 0.1rem;
+  }
+
+  .nav-link-custom {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.88rem;
+  }
+
+  .btn-voltara-primary,
+  .btn-voltara-outline {
+    padding: 0.5rem 1rem;
+    font-size: 0.88rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   TABLET VIEW (768px to 991px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+  .nav-menu-list,
+  .nav-search-trigger,
+  .nav-auth-buttons {
+    display: none !important;
+  }
+
+  .navbar-mobile-toggle {
+    display: flex !important;
+  }
+
+  .hero-section {
+    padding: 3.5rem 0 4rem 0;
+  }
+
+  .booking-stepper-header {
+    padding: 1rem 1.25rem;
+  }
+
+  .booking-panel-step {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .calendar-day {
+    height: 46px;
+    font-size: 0.88rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE SCREENS (<= 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .hero-headline {
+    font-size: 2.15rem;
+  }
+
+  .hero-stats-banner {
+    padding: 1.25rem 1rem;
+  }
+
+  .stat-metric-number {
+    font-size: 1.4rem;
+  }
+
+  /* Stepper mobile compaction */
+  .booking-stepper-list::before {
+    top: 15px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .step-node {
+    width: 30px;
+    height: 30px;
+    font-size: 0.78rem;
+  }
+
+  .step-label {
+    font-size: 0.68rem;
+    display: none; /* Keep cleaner node dots on small mobile */
+  }
+
+  .booking-step-item.active .step-label {
+    display: block;
+    position: absolute;
+    top: 32px;
+    width: 80px;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .booking-panel-step {
+    padding: 1.25rem 1rem;
+  }
+
+  /* Calendar responsiveness */
+  .calendar-day {
+    height: 42px;
+    font-size: 0.82rem;
+  }
+
+  .time-slot-btn {
+    min-width: 90px;
+    padding: 0.5rem 0.65rem;
+  }
+
+  .slot-time {
+    font-size: 0.85rem;
+  }
+
+  /* Forms & Cards */
+  .voltara-card {
+    padding: 1.25rem;
+  }
+
+  .virtual-card-preview {
+    height: 180px;
+    padding: 1.1rem;
+  }
+
+  .voltara-toast-container {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+  }
+
+  .voltara-toast {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .voltara-footer {
+    padding: 3rem 0 1.5rem 0;
+    margin-top: 3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   EXTRA SMALL MOBILE (<= 375px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 375px) {
+  .brand-text {
+    font-size: 1.2rem;
+  }
+
+  .brand-tag {
+    display: none;
+  }
+
+  .calendar-weekdays {
+    font-size: 0.72rem;
+  }
+
+  .calendar-day {
+    height: 38px;
+    font-size: 0.78rem;
+  }
+
+  .time-slot-btn {
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ACCESSIBILITY & REDUCED MOTION
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

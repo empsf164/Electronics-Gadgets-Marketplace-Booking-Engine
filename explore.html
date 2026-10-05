@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Services & Hosts — VOLTARA Marketplace</title>
+  <meta name="description" content="Discover verified electronics service providers, compare laboratory repair specialists, and view instant live prices.">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       PRIMARY NAVBAR
+       ========================================================================== -->
+  <header class="voltara-navbar">
+    <div class="container-custom h-100 d-flex align-items-center justify-content-between">
+      
+      <!-- Left: Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Voltara Home">
+        <div class="brand-symbol">
+          <i class="bi bi-cpu-fill"></i>
+        </div>
+        <div class="d-flex align-items-center">
+          <span class="brand-text">VOLTARA</span>
+          <span class="brand-tag">PRO</span>
+        </div>
+      </a>
+
+      <!-- Center: Main Navigation -->
+      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+        <ul class="nav-menu-list">
+          <li><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li><a href="explore.html" class="nav-link-custom active">Explore</a></li>
+          <li><a href="service-details.html?service=screen-replacement" class="nav-link-custom">Services</a></li>
+          <li><a href="host-profile.html?host=apex-lab" class="nav-link-custom">Hosts</a></li>
+          <li><a href="host-setup.html" class="nav-link-custom">Host Setup</a></li>
+          <li><a href="guides.html" class="nav-link-custom">Guides</a></li>
+          <li><a href="about.html" class="nav-link-custom">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="nav-actions">
+        <button type="button" class="nav-search-trigger d-none d-sm-flex" data-bs-toggle="modal" data-bs-target="#voltaraSearchModal" aria-label="Search">
+          <i class="bi bi-search"></i>
+          <span>Search...</span>
+          <span class="kbd-shortcut">Ctrl+K</span>
+        </button>
+
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+
+        <div class="nav-auth-buttons d-none d-md-flex align-items-center gap-2">
+          <a href="login.html" class="btn-voltara-outline py-2 px-3">Login</a>
+          <a href="signup.html" class="text-secondary small fw-semibold px-2 text-decoration-none">Sign Up</a>
+        </div>
+
+        <a href="booking.html" class="btn-voltara-primary">
+          <i class="bi bi-calendar2-check"></i>
+          <span>Book a Service</span>
+        </a>
+
+        <button type="button" class="navbar-mobile-toggle btn btn-sm btn-outline-secondary d-lg-none d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;" aria-label="Toggle navigation menu">
+          <i class="bi bi-list fs-5"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop"></div>
+  <aside class="voltara-mobile-drawer" aria-label="Mobile Navigation">
+    <div class="p-3 border-bottom border-subtle d-flex justify-content-between align-items-center">
+      <div class="brand-logo">
+        <div class="brand-symbol" style="width: 32px; height: 32px; font-size: 1rem;"><i class="bi bi-cpu-fill"></i></div>
+        <span class="brand-text fs-5">VOLTARA</span>
+      </div>
+      <button type="button" class="mobile-drawer-close btn btn-sm btn-outline-secondary" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="p-3 d-flex flex-column gap-1">
+      <a href="index.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Home</a>
+      <a href="explore.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold active">Explore Marketplace</a>
+      <a href="service-details.html?service=screen-replacement" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Services & Quotes</a>
+      <a href="host-profile.html?host=apex-lab" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Verified Hosts</a>
+      <a href="host-setup.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Host Availability Setup</a>
+      <a href="guides.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Guides & Resources</a>
+      <a href="about.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">About Voltara</a>
+      <a href="contact.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Contact Concierge</a>
+      <div class="border-top border-subtle mt-3 pt-3 d-flex flex-column gap-2">
+        <a href="booking.html" class="btn-voltara-primary justify-content-center py-2"><i class="bi bi-calendar2-check"></i> Book a Service</a>
+        <a href="login.html" class="btn-voltara-outline justify-content-center py-2">Login</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       EXPLORE HERO & SEARCH HEADER
+       ========================================================================== -->
+  <section class="py-4 bg-surface-subtle border-bottom border-subtle">
+    <div class="container-custom">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-6">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-1 small">
+              <li class="breadcrumb-item"><a href="index.html" class="text-secondary">Home</a></li>
+              <li class="breadcrumb-item active text-primary" aria-current="page">Explore Marketplace</li>
+            </ol>
+          </nav>
+          <h1 class="font-heading fw-bold fs-2 mb-1">Electronics Service Discovery</h1>
+          <p class="text-secondary small mb-0">Browse certified service labs, mobile van specialists, and hardware diagnostic services.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-text bg-surface-elevated border-medium text-muted"><i class="bi bi-search"></i></span>
+            <input type="text" id="marketplaceSearchInput" class="form-control form-control-custom border-start-0" placeholder="Search by service name, device model, or host laboratory...">
+            <button class="btn btn-outline-secondary d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileFilterCollapse">
+              <i class="bi bi-funnel"></i> Filters
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MAIN MARKETPLACE CONTAINER (SIDEBAR FILTERS + RESULTS GRID)
+       ========================================================================== -->
+  <main class="py-4">
+    <div class="container-custom">
+      <div class="row g-4">
+        
+        <!-- Filter Sidebar -->
+        <aside class="col-lg-3">
+          <div class="collapse d-lg-block" id="mobileFilterCollapse">
+            <div class="voltara-card bg-surface-elevated p-4 border border-subtle rounded-3 sticky-top" style="top: 90px; z-index: 10;">
+              
+              <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-subtle">
+                <h5 class="font-heading fw-bold mb-0 fs-6"><i class="bi bi-sliders me-1 text-primary"></i> Filters</h5>
+                <button type="button" id="btnResetFilters" class="btn btn-link text-muted p-0 text-decoration-none small">Reset All</button>
+              </div>
+
+              <!-- Filter: Device Category Pills -->
+              <div class="mb-4">
+                <label class="input-label-custom">Device Category</label>
+                <div class="d-flex flex-column gap-2" id="filterCategoryContainer">
+                  <div class="form-check">
+                    <input class="form-check-input filter-category-radio" type="radio" name="catRadio" id="catAll" value="all" checked>
+                    <label class="form-check-label small" for="catAll">All Categories</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input filter-category-radio" type="radio" name="catRadio" id="catPhones" value="smartphones">
+                    <label class="form-check-label small" for="catPhones">Smartphones (iPhone / Android)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input filter-category-radio" type="radio" name="catRadio" id="catLaptops" value="laptops">
+                    <label class="form-check-label small" for="catLaptops">Laptops & MacBooks</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input filter-category-radio" type="radio" name="catRadio" id="catTablets" value="tablets">
+                    <label class="form-check-label small" for="catTablets">Tablets & iPads</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input filter-category-radio" type="radio" name="catRadio" id="catCameras" value="cameras">
+                    <label class="form-check-label small" for="catCameras">Cameras & Optics</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input filter-category-radio" type="radio" name="catRadio" id="catGaming" value="gaming">
+                    <label class="form-check-label small" for="catGaming">Gaming Consoles</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input filter-category-radio" type="radio" name="catRadio" id="catSmartHome" value="smarthome">
+                    <label class="form-check-label small" for="catSmartHome">Smart Home & Audio</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Filter: Price Range Slider -->
+              <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <label class="input-label-custom mb-0">Max Base Price</label>
+                  <span class="small fw-bold text-primary" id="priceRangeLabel">₹5,000</span>
+                </div>
+                <input type="range" class="form-range" id="filterPriceRange" min="500" max="6000" step="250" value="6000">
+                <div class="d-flex justify-content-between text-muted small" style="font-size: 0.72rem;">
+                  <span>₹500</span>
+                  <span>₹3,000</span>
+                  <span>₹6,000+</span>
+                </div>
+              </div>
+
+              <!-- Filter: Host Type -->
+              <div class="mb-4">
+                <label class="input-label-custom">Host Facility Type</label>
+                <div class="d-flex flex-column gap-2">
+                  <div class="form-check">
+                    <input class="form-check-input filter-host-type" type="checkbox" value="service-center" id="hostTypeLab" checked>
+                    <label class="form-check-label small" for="hostTypeLab">Service Center Labs</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input filter-host-type" type="checkbox" value="mobile-tech" id="hostTypeMobile" checked>
+                    <label class="form-check-label small" for="hostTypeMobile">Mobile Van Doorstep</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input filter-host-type" type="checkbox" value="independent-specialist" id="hostTypeIndie" checked>
+                    <label class="form-check-label small" for="hostTypeIndie">Independent Masters</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Filter: Fast Badges -->
+              <div class="mb-2">
+                <label class="input-label-custom">Verification & Speed</label>
+                <div class="d-flex flex-column gap-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="filterVerifiedOnly" checked>
+                    <label class="form-check-label small" for="filterVerifiedOnly">
+                      <i class="bi bi-patch-check-fill text-primary me-1"></i> Verified Specialists Only
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="filterAvailableToday">
+                    <label class="form-check-label small" for="filterAvailableToday">
+                      <i class="bi bi-clock-history text-success me-1"></i> Available Today
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </aside>
+
+        <!-- Marketplace Results Area -->
+        <div class="col-lg-9">
+          
+          <!-- Top Results Bar & Sorting -->
+          <div class="voltara-card bg-surface-elevated p-3 mb-4 d-flex flex-wrap justify-content-between align-items-center gap-3 border border-subtle rounded-3">
+            <div class="d-flex align-items-center gap-2">
+              <span class="fw-bold text-primary-emphasis" id="resultsCountDisplay">Showing 8 Services</span>
+              <span class="badge bg-surface-subtle text-muted">All Verified</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <!-- Sort Dropdown -->
+              <div class="d-flex align-items-center gap-2">
+                <label for="sortBySelect" class="small text-muted text-nowrap">Sort By:</label>
+                <select id="sortBySelect" class="form-select form-select-sm form-select-custom py-1" style="width: 170px;">
+                  <option value="recommended">Recommended</option>
+                  <option value="rating">Highest Rated</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="turnaround">Fastest Turnaround</option>
+                </select>
+              </div>
+
+              <!-- View Switcher (Grid / List) -->
+              <div class="btn-group btn-group-sm" role="group" aria-label="Layout view">
+                <button type="button" class="btn btn-outline-secondary active" id="btnViewGrid" title="Grid View"><i class="bi bi-grid-fill"></i></button>
+                <button type="button" class="btn btn-outline-secondary" id="btnViewList" title="List View"><i class="bi bi-list-ul"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Results Grid -->
+          <div class="row g-4" id="marketplaceResultsGrid">
+            <!-- Dynamically populated via explore.js controller -->
+          </div>
+
+          <!-- Empty State Container -->
+          <div id="noResultsState" class="voltara-card p-5 text-center d-none border border-subtle rounded-3 mt-4">
+            <i class="bi bi-search fs-1 text-muted opacity-50 mb-3 d-block"></i>
+            <h4 class="font-heading fw-bold mb-2">No Matching Services Found</h4>
+            <p class="text-secondary small mb-4">Try clearing filters or searching for broad terms like "Screen", "Battery", or "Thermal".</p>
+            <button type="button" class="btn-voltara-primary btn-sm mx-auto" id="btnClearSearch">Reset All Filters</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Search Modal -->
+  <div class="modal fade" id="voltaraSearchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface-elevated border border-medium shadow-lg rounded-4 overflow-hidden">
+        <div class="modal-header border-bottom border-subtle p-3">
+          <div class="d-flex align-items-center gap-2 w-100">
+            <i class="bi bi-search text-primary fs-5"></i>
+            <input type="text" id="globalSearchInput" class="form-control bg-transparent border-0 text-primary shadow-none fs-5" placeholder="Search gadgets, services, hosts, guides..." aria-label="Search">
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3" id="globalSearchResults" style="max-height: 440px; overflow-y: auto;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="voltara-footer">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 small text-secondary">
+        <div>© 2026 VOLTARA Inc. "Discover Better Tech. Book Smarter Service."</div>
+        <div class="d-flex gap-3">
+          <a href="about.html" class="text-secondary">Escrow Protection</a>
+          <a href="guides.html" class="text-secondary">Repair Guides</a>
+          <a href="host-setup.html" class="text-secondary">Host Availability Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/pricing.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Marketplace Filtering Controller -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('marketplaceResultsGrid');
+      const countDisplay = document.getElementById('resultsCountDisplay');
+      const noResults = document.getElementById('noResultsState');
+      const searchInput = document.getElementById('marketplaceSearchInput');
+      const priceSlider = document.getElementById('filterPriceRange');
+      const priceLabel = document.getElementById('priceRangeLabel');
+      const sortSelect = document.getElementById('sortBySelect');
+      const resetBtn = document.getElementById('btnResetFilters');
+      const clearSearchBtn = document.getElementById('btnClearSearch');
+      const btnViewGrid = document.getElementById('btnViewGrid');
+      const btnViewList = document.getElementById('btnViewList');
+      let currentView = 'grid';
+
+      // Parse initial URL query
+      const params = new URLSearchParams(window.location.search);
+      const initialCat = params.get('category') || 'all';
+      const catRadio = document.querySelector(`.filter-category-radio[value="${initialCat}"]`);
+      if (catRadio) catRadio.checked = true;
+
+      // Update price slider label
+      priceSlider.addEventListener('input', () => {
+        priceLabel.textContent = VoltaraDB.formatCurrency(priceSlider.value);
+        filterAndRender();
+      });
+
+      // View toggle
+      btnViewGrid.addEventListener('click', () => {
+        btnViewGrid.classList.add('active');
+        btnViewList.classList.remove('active');
+        currentView = 'grid';
+        filterAndRender();
+      });
+
+      btnViewList.addEventListener('click', () => {
+        btnViewList.classList.add('active');
+        btnViewGrid.classList.remove('active');
+        currentView = 'list';
+        filterAndRender();
+      });
+
+      function filterAndRender() {
+        const query = searchInput.value.toLowerCase().trim();
+        const selectedCat = document.querySelector('.filter-category-radio:checked').value;
+        const maxPrice = parseInt(priceSlider.value);
+        const verifiedOnly = document.getElementById('filterVerifiedOnly').checked;
+        const sortBy = sortSelect.value;
+
+        // Filter services
+        let results = VOLTARA_DATA.services.filter(s => {
+          if (query && !s.title.toLowerCase().includes(query) && !s.description.toLowerCase().includes(query)) {
+            return false;
+          }
+          if (selectedCat !== 'all' && s.category !== selectedCat && !s.targetDevices.some(d => d.toLowerCase().includes(selectedCat))) {
+            return false;
+          }
+          if (s.basePrice > maxPrice) {
+            return false;
+          }
+          return true;
+        });
+
+        // Sorting
+        if (sortBy === 'rating') {
+          results.sort((a, b) => b.rating - a.rating);
+        } else if (sortBy === 'price-asc') {
+          results.sort((a, b) => a.basePrice - b.basePrice);
+        } else if (sortBy === 'price-desc') {
+          results.sort((a, b) => b.basePrice - a.basePrice);
+        } else if (sortBy === 'turnaround') {
+          results.sort((a, b) => a.turnaround.localeCompare(b.turnaround));
+        }
+
+        countDisplay.textContent = `Showing ${results.length} Service${results.length === 1 ? '' : 's'}`;
+
+        if (results.length === 0) {
+          grid.innerHTML = '';
+          noResults.classList.remove('d-none');
+          return;
+        }
+
+        noResults.classList.add('d-none');
+
+        // Render Cards
+        let html = '';
+        results.forEach(s => {
+          // Find matched host recommendation
+          const host = VOLTARA_DATA.hosts[0];
+          const depositAmount = Math.round(s.basePrice * 0.25);
+
+          if (currentView === 'grid') {
+            html += `
+              <div class="col-md-6 col-lg-6">
+                <div class="voltara-card h-100 d-flex flex-column justify-content-between p-4">
+                  <div>
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                      <div class="service-card-icon mb-0"><i class="bi ${s.icon}"></i></div>
+                      <span class="badge bg-primary-subtle text-primary">${s.badge || s.categoryLabel}</span>
+                    </div>
+                    <h4 class="font-heading fw-bold mb-1 fs-5">${s.title}</h4>
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <span class="badge bg-success-subtle text-success fw-bold">${s.rating} ★</span>
+                      <span class="small text-muted">(${s.reviewsCount} reviews)</span>
+                      <span class="small text-secondary">• Turnaround: <strong>${s.turnaround}</strong></span>
+                    </div>
+                    <p class="text-secondary small mb-3">${s.description}</p>
+                    <div class="p-2 rounded-2 bg-surface-subtle border border-subtle small mb-3">
+                      <div class="d-flex justify-content-between text-muted">
+                        <span>Recommended Lab:</span>
+                        <strong class="text-primary-emphasis">${host.name} <i class="bi bi-patch-check-fill text-primary small"></i></strong>
+                      </div>
+                      <div class="d-flex justify-content-between text-muted mt-1">
+                        <span>Next Slot:</span>
+                        <span class="text-success fw-semibold"><i class="bi bi-lightning-charge"></i> Tomorrow 10:30 AM</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="small text-muted">Starting Quote</div>
+                      <div class="fw-bold text-primary fs-5">${VoltaraDB.formatCurrency(s.basePrice)} <span class="small text-muted fw-normal">(${VoltaraDB.formatCurrency(depositAmount)} deposit)</span></div>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a href="service-details.html?service=${s.id}" class="btn btn-sm btn-outline-secondary">Quote Calculator</a>
+                      <a href="booking.html?service=${s.id}" class="btn-voltara-primary btn-sm justify-content-center">Book Slot</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `;
+          } else {
+            // List layout
+            html += `
+              <div class="col-12">
+                <div class="voltara-card p-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="service-card-icon mb-0 flex-shrink-0"><i class="bi ${s.icon}"></i></div>
+                    <div>
+                      <div class="d-flex align-items-center gap-2 mb-1">
+                        <h4 class="font-heading fw-bold mb-0 fs-5">${s.title}</h4>
+                        <span class="badge bg-primary-subtle text-primary">${s.categoryLabel}</span>
+                      </div>
+                      <p class="text-secondary small mb-1">${s.description}</p>
+                      <div class="small text-muted">
+                        <span class="text-success fw-bold">${s.rating} ★</span> (${s.reviewsCount} reviews) • Turnaround: ${s.turnaround} • Host: ${host.name}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-md-column justify-content-between align-items-md-end text-md-end flex-shrink-0 pt-2 pt-md-0 border-top border-md-0 border-subtle">
+                    <div class="mb-2">
+                      <div class="small text-muted">Starting Quote</div>
+                      <div class="fw-bold text-primary fs-5">${VoltaraDB.formatCurrency(s.basePrice)}</div>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a href="service-details.html?service=${s.id}" class="btn btn-sm btn-outline-secondary">Quote</a>
+                      <a href="booking.html?service=${s.id}" class="btn-voltara-primary btn-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+        });
+
+        grid.innerHTML = html;
+      }
+
+      // Event listeners for filters
+      searchInput.addEventListener('input', filterAndRender);
+      document.querySelectorAll('.filter-category-radio').forEach(r => r.addEventListener('change', filterAndRender));
+      document.querySelectorAll('.filter-host-type').forEach(c => c.addEventListener('change', filterAndRender));
+      document.getElementById('filterVerifiedOnly').addEventListener('change', filterAndRender);
+      document.getElementById('filterAvailableToday').addEventListener('change', filterAndRender);
+      sortSelect.addEventListener('change', filterAndRender);
+
+      const resetAction = () => {
+        searchInput.value = '';
+        document.getElementById('catAll').checked = true;
+        priceSlider.value = 6000;
+        priceLabel.textContent = '₹6,000+';
+        sortSelect.value = 'recommended';
+        filterAndRender();
+      };
+
+      if (resetBtn) resetBtn.addEventListener('click', resetAction);
+      if (clearSearchBtn) clearSearchBtn.addEventListener('click', resetAction);
+
+      // Initial render
+      filterAndRender();
+    });
+  </script>
+</body>
+</html>

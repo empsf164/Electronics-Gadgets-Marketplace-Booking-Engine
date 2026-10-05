@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLTARA — Electronics Gadgets Marketplace & Booking Engine</title>
+  <meta name="description" content="Discover verified electronics specialists, get instant transparent quotes, and book real-time repair appointments with secure deposit escrow.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="VOLTARA — Discover Better Tech. Book Smarter Service.">
+  <meta property="og:description" content="Premium Electronics Gadgets Marketplace & Real-Time Booking Engine.">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap 5 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Voltara Styles -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       PRIMARY NAVBAR
+       ========================================================================== -->
+  <header class="voltara-navbar">
+    <div class="container-custom h-100 d-flex align-items-center justify-content-between">
+      
+      <!-- Left: Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Voltara Home">
+        <div class="brand-symbol">
+          <i class="bi bi-cpu-fill"></i>
+        </div>
+        <div class="d-flex align-items-center">
+          <span class="brand-text">VOLTARA</span>
+          <span class="brand-tag">PRO</span>
+        </div>
+      </a>
+
+      <!-- Center: Main Navigation -->
+      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+        <ul class="nav-menu-list">
+          <li>
+            <a href="index.html" class="nav-link-custom active">Home</a>
+          </li>
+
+          <!-- Explore Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="explore.html" class="nav-link-custom">
+              Explore <i class="bi bi-chevron-down small opacity-75"></i>
+            </a>
+            <div class="nav-dropdown-menu mega-menu">
+              <a href="explore.html?category=smartphones" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-phone"></i></div>
+                <div>
+                  <div class="dropdown-title">Smartphones</div>
+                  <div class="dropdown-desc">iPhone, Galaxy, Pixel diagnostics & repair</div>
+                </div>
+              </a>
+              <a href="explore.html?category=laptops" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-laptop"></i></div>
+                <div>
+                  <div class="dropdown-title">Laptops & MacBooks</div>
+                  <div class="dropdown-desc">Thermal paste, liquid damage & logic boards</div>
+                </div>
+              </a>
+              <a href="explore.html?category=tablets" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-tablet"></i></div>
+                <div>
+                  <div class="dropdown-title">Tablets & iPads</div>
+                  <div class="dropdown-desc">Digitizers, USB-C ports & battery swaps</div>
+                </div>
+              </a>
+              <a href="explore.html?category=cameras" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-camera"></i></div>
+                <div>
+                  <div class="dropdown-title">Cameras & Optics</div>
+                  <div class="dropdown-desc">Sensor cleanroom & lens calibration</div>
+                </div>
+              </a>
+              <a href="explore.html?category=gaming" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-controller"></i></div>
+                <div>
+                  <div class="dropdown-title">Gaming Consoles</div>
+                  <div class="dropdown-desc">PS5, Xbox & Steam Deck micro-soldering</div>
+                </div>
+              </a>
+              <a href="explore.html?category=smarthome" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-house-gear"></i></div>
+                <div>
+                  <div class="dropdown-title">Smart Home & Audio</div>
+                  <div class="dropdown-desc">Matter, Thread mesh & Sonos tuning</div>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Services Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="service-details.html?service=screen-replacement" class="nav-link-custom">
+              Services <i class="bi bi-chevron-down small opacity-75"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="service-details.html?service=screen-replacement" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-display"></i></div>
+                <div>
+                  <div class="dropdown-title">Screen Replacement</div>
+                  <div class="dropdown-desc">Factory OLED & TrueTone calibration</div>
+                </div>
+              </a>
+              <a href="service-details.html?service=battery-replacement" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-battery-charging"></i></div>
+                <div>
+                  <div class="dropdown-title">Battery Replacement</div>
+                  <div class="dropdown-desc">Zero-cycle OEM health restore</div>
+                </div>
+              </a>
+              <a href="service-details.html?service=laptop-thermal-overhaul" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-fan"></i></div>
+                <div>
+                  <div class="dropdown-title">Thermal Overhaul</div>
+                  <div class="dropdown-desc">PTM7950 & Liquid Metal tuning</div>
+                </div>
+              </a>
+              <a href="service-details.html?service=device-diagnostics" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-search"></i></div>
+                <div>
+                  <div class="dropdown-title">Full Diagnostic (72-Point)</div>
+                  <div class="dropdown-desc">FLIR thermal & oscilloscope check</div>
+                </div>
+              </a>
+              <a href="explore.html" class="dropdown-item-card border-top border-subtle mt-1 pt-2">
+                <div class="dropdown-icon bg-secondary-subtle text-secondary"><i class="bi bi-grid-fill"></i></div>
+                <div>
+                  <div class="dropdown-title">View All 16+ Services</div>
+                  <div class="dropdown-desc">Explore full repair catalog</div>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Hosts Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="host-profile.html?host=apex-lab" class="nav-link-custom">
+              Hosts <i class="bi bi-chevron-down small opacity-75"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="host-profile.html?host=apex-lab" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-shield-check"></i></div>
+                <div>
+                  <div class="dropdown-title">Apex Precision Tech Labs</div>
+                  <div class="dropdown-desc">Master Certified • 4.98 ★ (342 reviews)</div>
+                </div>
+              </a>
+              <a href="host-profile.html?host=volt-fix-mobile" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-truck"></i></div>
+                <div>
+                  <div class="dropdown-title">VoltFix Mobile Fleet</div>
+                  <div class="dropdown-desc">On-Demand Van • Doorstep Service</div>
+                </div>
+              </a>
+              <a href="host-profile.html?host=silicon-craft" class="dropdown-item-card">
+                <div class="dropdown-icon"><i class="bi bi-motherboard"></i></div>
+                <div>
+                  <div class="dropdown-title">SiliconCraft Rig Studio</div>
+                  <div class="dropdown-desc">Console & PC Specialists • 4.99 ★</div>
+                </div>
+              </a>
+              <a href="host-setup.html" class="dropdown-item-card border-top border-subtle mt-1 pt-2">
+                <div class="dropdown-icon bg-info-subtle text-info"><i class="bi bi-gear-fill"></i></div>
+                <div>
+                  <div class="dropdown-title">Host Availability Setup</div>
+                  <div class="dropdown-desc">Configure workbench slots & pricing</div>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <a href="#how-it-works" class="nav-link-custom">How It Works</a>
+          </li>
+          <li>
+            <a href="guides.html" class="nav-link-custom">Guides</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link-custom">About</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right: Search, Theme Toggle, Auth & CTA -->
+      <div class="nav-actions">
+        <!-- Search Trigger -->
+        <button type="button" class="nav-search-trigger d-none d-sm-flex" data-bs-toggle="modal" data-bs-target="#voltaraSearchModal" aria-label="Search">
+          <i class="bi bi-search"></i>
+          <span>Search...</span>
+          <span class="kbd-shortcut">Ctrl+K</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+
+        <!-- Auth Links -->
+        <div class="nav-auth-buttons d-none d-md-flex align-items-center gap-2">
+          <a href="login.html" class="btn-voltara-outline py-2 px-3">Login</a>
+          <a href="signup.html" class="text-secondary small fw-semibold px-2 text-decoration-none">Sign Up</a>
+        </div>
+
+        <!-- Primary CTA -->
+        <a href="booking.html" class="btn-voltara-primary">
+          <i class="bi bi-calendar2-check"></i>
+          <span>Book a Service</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="navbar-mobile-toggle btn btn-sm btn-outline-secondary d-lg-none d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;" aria-label="Toggle navigation menu">
+          <i class="bi bi-list fs-5"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE DRAWER
+       ========================================================================== -->
+  <div class="mobile-drawer-backdrop"></div>
+  <aside class="voltara-mobile-drawer" aria-label="Mobile Navigation">
+    <div class="p-3 border-bottom border-subtle d-flex justify-content-between align-items-center">
+      <div class="brand-logo">
+        <div class="brand-symbol" style="width: 32px; height: 32px; font-size: 1rem;">
+          <i class="bi bi-cpu-fill"></i>
+        </div>
+        <span class="brand-text fs-5">VOLTARA</span>
+      </div>
+      <button type="button" class="mobile-drawer-close btn btn-sm btn-outline-secondary" aria-label="Close menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="p-3">
+      <!-- Search Input Mobile -->
+      <button type="button" class="btn btn-sm btn-outline-secondary w-100 text-start py-2 px-3 mb-3 d-flex justify-content-between align-items-center" data-bs-toggle="modal" data-bs-target="#voltaraSearchModal">
+        <span><i class="bi bi-search me-2"></i> Search services, hosts...</span>
+        <span class="badge bg-surface-subtle text-muted">Ctrl+K</span>
+      </button>
+
+      <div class="d-flex flex-column gap-1">
+        <a href="index.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold active">Home</a>
+        <a href="explore.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Explore Marketplace</a>
+        <a href="service-details.html?service=screen-replacement" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Services & Quotes</a>
+        <a href="host-profile.html?host=apex-lab" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Verified Hosts</a>
+        <a href="host-setup.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Host Availability Setup</a>
+        <a href="guides.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Guides & Teardowns</a>
+        <a href="about.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">About Voltara</a>
+        <a href="contact.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Contact Concierge</a>
+      </div>
+
+      <div class="border-top border-subtle mt-4 pt-3 d-flex flex-column gap-2">
+        <a href="booking.html" class="btn-voltara-primary justify-content-center py-2">
+          <i class="bi bi-calendar2-check"></i> Book a Service
+        </a>
+        <div class="d-flex gap-2">
+          <a href="login.html" class="btn-voltara-outline justify-content-center py-2 flex-grow-1">Login</a>
+          <a href="signup.html" class="btn btn-outline-secondary py-2 flex-grow-1">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="container-custom">
+      <div class="row align-items-center g-5">
+        
+        <!-- Hero Left Content -->
+        <div class="col-lg-7 gsap-hero-anim">
+          <div class="hero-pill-badge">
+            <i class="bi bi-stars"></i>
+            <span>Next-Gen Electronics Marketplace & Booking Engine</span>
+          </div>
+
+          <h1 class="hero-headline font-heading fw-bold mb-3">
+            Your Next Gadget Service Starts Here.
+          </h1>
+
+          <p class="fs-5 text-secondary mb-4" style="max-width: 580px;">
+            Discover trusted electronics service providers, compare verified lab specialists, get instant transparent quotes, and reserve your real-time bench slot in minutes.
+          </p>
+
+          <!-- Floating Badges / Pillars -->
+          <div class="d-flex flex-wrap gap-2 mb-4 pb-2">
+            <span class="badge bg-surface-elevated text-primary-emphasis border border-subtle py-2 px-3 rounded-pill">
+              <i class="bi bi-shield-fill-check text-primary me-1"></i> 100% Verified Hosts
+            </span>
+            <span class="badge bg-surface-elevated text-primary-emphasis border border-subtle py-2 px-3 rounded-pill">
+              <i class="bi bi-clock-history text-success me-1"></i> Real-Time Slot Booking
+            </span>
+            <span class="badge bg-surface-elevated text-primary-emphasis border border-subtle py-2 px-3 rounded-pill">
+              <i class="bi bi-calculator text-info me-1"></i> Instant Upfront Quotes
+            </span>
+            <span class="badge bg-surface-elevated text-primary-emphasis border border-subtle py-2 px-3 rounded-pill">
+              <i class="bi bi-lock-fill text-warning me-1"></i> 25% Secure Deposit Escrow
+            </span>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <a href="explore.html" class="btn-voltara-primary py-3 px-4 fs-6">
+              <i class="bi bi-grid-3x3-gap-fill"></i> Explore Services
+            </a>
+            <a href="host-profile.html?host=apex-lab" class="btn-voltara-outline py-3 px-4 fs-6">
+              <i class="bi bi-person-badge"></i> Find a Host
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right: Interactive Quick Service Finder Card -->
+        <div class="col-lg-5 gsap-hero-anim">
+          <div class="voltara-card bg-surface-elevated p-4 shadow-lg border border-subtle rounded-4 position-relative">
+            <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom border-subtle">
+              <div class="d-flex align-items-center gap-2">
+                <span class="status-indicator bg-success" style="width: 8px; height: 8px; border-radius: 50%;"></span>
+                <span class="fw-bold text-primary-emphasis small text-uppercase letter-spacing-1">Quick Instant Booking</span>
+              </div>
+              <span class="badge bg-primary-subtle text-primary small">Fast Dispatch</span>
+            </div>
+
+            <form action="booking.html" method="GET" class="d-flex flex-column gap-3">
+              <div>
+                <label class="input-label-custom">Device Category</label>
+                <select name="device" class="form-select-custom" id="heroDeviceSelect">
+                  <option value="iphone-15-pro-max">Smartphone (iPhone / Galaxy / Pixel)</option>
+                  <option value="macbook-pro-m3">Laptop (MacBook Pro / XPS / ThinkPad)</option>
+                  <option value="sony-a7-iv">Camera & Cinema Optics</option>
+                  <option value="ps5-slim-pro">Gaming Console (PS5 / Xbox Series X)</option>
+                  <option value="ipad-pro-m2">Tablet / iPad Pro</option>
+                  <option value="sonos-era-300">Smart Home & Sound Systems</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="input-label-custom">Required Service</label>
+                <select name="service" class="form-select-custom" id="heroServiceSelect">
+                  <option value="screen-replacement">Ultra Retina & OLED Screen Replacement</option>
+                  <option value="battery-replacement">OEM High-Capacity Battery Replacement</option>
+                  <option value="laptop-thermal-overhaul">Thermal Paste Overhaul & Fan De-dust</option>
+                  <option value="device-diagnostics">Full 72-Point Hardware Diagnostic</option>
+                  <option value="liquid-damage-ultrasonic">Ultrasonic Liquid Damage Rescue</option>
+                  <option value="console-hdmi-repair">Console HDMI 2.1 Micro-Soldering</option>
+                </select>
+              </div>
+
+              <div class="p-3 rounded-3 bg-surface-subtle border border-subtle d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="small text-muted">Estimated Starting From</div>
+                  <div class="fs-4 font-heading fw-bold text-primary" id="heroEstimatedPrice">₹3,899</div>
+                </div>
+                <div class="text-end">
+                  <div class="badge bg-success-subtle text-success mb-1">Slots Available Today</div>
+                  <div class="small text-muted">25% Deposit = ₹975</div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-voltara-primary w-100 py-3 justify-content-center">
+                <i class="bi bi-arrow-right-circle"></i> Continue to Live Slot Selector
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Metrics Strip -->
+      <div class="hero-stats-banner mt-5 gsap-reveal">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-metric-number text-primary">540+</div>
+            <div class="stat-metric-label">Verified Tech Labs</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-metric-number text-success">99.4%</div>
+            <div class="stat-metric-label">First-Time Fix Rate</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-metric-number text-info">&lt; 2.4h</div>
+            <div class="stat-metric-label">Average Turnaround</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-metric-number text-warning">365 Days</div>
+            <div class="stat-metric-label">Voltara Shield Warranty</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURED SERVICES
+       ========================================================================== -->
+  <section class="py-5 bg-surface-subtle border-top border-bottom border-subtle">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+        <div>
+          <span class="badge bg-primary-subtle text-primary text-uppercase letter-spacing-1 mb-2">Curated Marketplace</span>
+          <h2 class="font-heading fw-bold mb-1">Featured Specialized Services</h2>
+          <p class="text-secondary mb-0">High-precision laboratory bench repairs and certified maintenance services.</p>
+        </div>
+        <a href="explore.html" class="btn-voltara-outline">
+          <span>View All Services</span> <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4" id="homeServicesGrid">
+        <!-- Populated dynamically or statically rendered for fast SSR -->
+        <div class="col-md-6 col-lg-4">
+          <div class="voltara-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="service-card-icon"><i class="bi bi-display"></i></div>
+                <span class="badge bg-primary-subtle text-primary">Most Popular</span>
+              </div>
+              <h4 class="font-heading fw-bold mb-2">Ultra Retina & OLED Screen Swap</h4>
+              <p class="text-secondary small mb-3">Factory-grade assembly swap with TrueTone EEPROM reprogramming and water-resistance gasket seal.</p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge bg-surface-subtle text-muted">Smartphones</span>
+                <span class="badge bg-surface-subtle text-muted">MacBooks</span>
+                <span class="badge bg-surface-subtle text-muted">iPads</span>
+              </div>
+            </div>
+            <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+              <div>
+                <span class="small text-muted">From</span>
+                <div class="fw-bold text-primary-emphasis fs-5">₹3,899</div>
+              </div>
+              <a href="service-details.html?service=screen-replacement" class="btn btn-sm btn-outline-primary px-3 rounded-2">
+                Configure Quote <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="voltara-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="service-card-icon"><i class="bi bi-battery-charging"></i></div>
+                <span class="badge bg-success-subtle text-success">Instant 45m</span>
+              </div>
+              <h4 class="font-heading fw-bold mb-2">OEM Battery Replacement</h4>
+              <p class="text-secondary small mb-3">Zero-cycle high density cell installation with battery health telemetry calibration and no iOS warnings.</p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge bg-surface-subtle text-muted">Phones</span>
+                <span class="badge bg-surface-subtle text-muted">Laptops</span>
+                <span class="badge bg-surface-subtle text-muted">Watches</span>
+              </div>
+            </div>
+            <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+              <div>
+                <span class="small text-muted">From</span>
+                <div class="fw-bold text-primary-emphasis fs-5">₹1,999</div>
+              </div>
+              <a href="service-details.html?service=battery-replacement" class="btn btn-sm btn-outline-primary px-3 rounded-2">
+                Configure Quote <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="voltara-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="service-card-icon"><i class="bi bi-fan"></i></div>
+                <span class="badge bg-info-subtle text-info">Pro Performance</span>
+              </div>
+              <h4 class="font-heading fw-bold mb-2">PTM7950 & Liquid Metal Overhaul</h4>
+              <p class="text-secondary small mb-3">Ultrasonic fan de-dusting, K5 Pro VRM putty, and Honeywell phase-change pads to stop thermal throttling.</p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge bg-surface-subtle text-muted">Gaming Laptops</span>
+                <span class="badge bg-surface-subtle text-muted">PS5</span>
+                <span class="badge bg-surface-subtle text-muted">Rigs</span>
+              </div>
+            </div>
+            <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+              <div>
+                <span class="small text-muted">From</span>
+                <div class="fw-bold text-primary-emphasis fs-5">₹1,799</div>
+              </div>
+              <a href="service-details.html?service=laptop-thermal-overhaul" class="btn btn-sm btn-outline-primary px-3 rounded-2">
+                Configure Quote <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="voltara-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="service-card-icon"><i class="bi bi-moisture"></i></div>
+                <span class="badge bg-danger-subtle text-danger">Micro-Soldering</span>
+              </div>
+              <h4 class="font-heading fw-bold mb-2">Ultrasonic Liquid Damage Rescue</h4>
+              <p class="text-secondary small mb-3">40kHz Branson solvent wash, microscopic trace jumper restoration, and logic board capacitor replacement.</p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge bg-surface-subtle text-muted">MacBook</span>
+                <span class="badge bg-surface-subtle text-muted">Smartphones</span>
+                <span class="badge bg-surface-subtle text-muted">Cameras</span>
+              </div>
+            </div>
+            <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+              <div>
+                <span class="small text-muted">From</span>
+                <div class="fw-bold text-primary-emphasis fs-5">₹3,499</div>
+              </div>
+              <a href="service-details.html?service=liquid-damage-ultrasonic" class="btn btn-sm btn-outline-primary px-3 rounded-2">
+                Configure Quote <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="voltara-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="service-card-icon"><i class="bi bi-controller"></i></div>
+                <span class="badge bg-warning-subtle text-warning">Console Bench</span>
+              </div>
+              <h4 class="font-heading fw-bold mb-2">Console HDMI 2.1 Micro-Rework</h4>
+              <p class="text-secondary small mb-3">Reinforced gold-plated 4K@120Hz HDMI port soldering and torn motherboard pad reconstruction.</p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge bg-surface-subtle text-muted">PS5</span>
+                <span class="badge bg-surface-subtle text-muted">Xbox Series X</span>
+                <span class="badge bg-surface-subtle text-muted">Switch</span>
+              </div>
+            </div>
+            <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+              <div>
+                <span class="small text-muted">From</span>
+                <div class="fw-bold text-primary-emphasis fs-5">₹2,899</div>
+              </div>
+              <a href="service-details.html?service=console-hdmi-repair" class="btn btn-sm btn-outline-primary px-3 rounded-2">
+                Configure Quote <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="voltara-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="service-card-icon"><i class="bi bi-camera"></i></div>
+                <span class="badge bg-info-subtle text-info">Cleanroom Lab</span>
+              </div>
+              <h4 class="font-heading fw-bold mb-2">Cleanroom Sensor De-Speckle</h4>
+              <p class="text-secondary small mb-3">Class 100 laminar cleanroom sensor wet cleaning, anti-static coating, and laser autofocus back-focus check.</p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge bg-surface-subtle text-muted">Sony Alpha</span>
+                <span class="badge bg-surface-subtle text-muted">Canon EOS</span>
+                <span class="badge bg-surface-subtle text-muted">Fujifilm</span>
+              </div>
+            </div>
+            <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+              <div>
+                <span class="small text-muted">From</span>
+                <div class="fw-bold text-primary-emphasis fs-5">₹2,499</div>
+              </div>
+              <a href="service-details.html?service=camera-sensor-calibration" class="btn btn-sm btn-outline-primary px-3 rounded-2">
+                Configure Quote <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURED VERIFIED HOSTS
+       ========================================================================== -->
+  <section class="py-5">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+        <div>
+          <span class="badge bg-success-subtle text-success text-uppercase letter-spacing-1 mb-2">Verified Providers</span>
+          <h2 class="font-heading fw-bold mb-1">Meet Our Top-Rated Hosts</h2>
+          <p class="text-secondary mb-0">Certified cleanrooms, on-demand mobile repair vans, and master micro-technicians.</p>
+        </div>
+        <a href="host-profile.html?host=apex-lab" class="btn-voltara-outline">
+          <span>Explore All Hosts</span> <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Host Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="host-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" class="host-card-cover" alt="Apex Tech Labs">
+              <div class="px-3 pb-3">
+                <div class="d-flex justify-content-between align-items-end host-card-avatar-wrapper mb-2">
+                  <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=150&q=80" class="host-card-avatar" alt="Apex Tech Labs">
+                  <span class="badge bg-primary text-white"><i class="bi bi-patch-check-fill me-1"></i> Master Certified</span>
+                </div>
+                <h4 class="font-heading fw-bold mb-1">Apex Precision Tech Labs</h4>
+                <div class="text-muted small mb-2"><i class="bi bi-geo-alt me-1"></i> Tech Quarter, Silicon Boulevard</div>
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="badge bg-success-subtle text-success fw-bold">4.98 ★</span>
+                  <span class="small text-secondary">(342 verified reviews)</span>
+                </div>
+                <p class="small text-secondary mb-3">Specialized in Apple ACiT logic board micro-soldering and Class 100 cleanroom display repairs.</p>
+                <div class="p-2 rounded-2 bg-surface-subtle border border-subtle small d-flex justify-content-between">
+                  <span class="text-muted">Turnaround: <strong class="text-primary-emphasis">2.4h</strong></span>
+                  <span class="text-muted">Response: <strong class="text-primary-emphasis">&lt; 8m</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 border-top border-subtle d-flex gap-2">
+              <a href="host-profile.html?host=apex-lab" class="btn btn-sm btn-outline-secondary flex-grow-1">View Host</a>
+              <a href="booking.html?host=apex-lab" class="btn-voltara-primary btn-sm flex-grow-1 justify-content-center">Book Bench</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Host Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="host-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" class="host-card-cover" alt="VoltFix Mobile Techs">
+              <div class="px-3 pb-3">
+                <div class="d-flex justify-content-between align-items-end host-card-avatar-wrapper mb-2">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" class="host-card-avatar" alt="VoltFix Mobile Techs">
+                  <span class="badge bg-info text-dark"><i class="bi bi-truck me-1"></i> Mobile Van Fleet</span>
+                </div>
+                <h4 class="font-heading fw-bold mb-1">VoltFix Mobile Specialists</h4>
+                <div class="text-muted small mb-2"><i class="bi bi-geo-alt me-1"></i> Doorstep Mobile Van Coverage</div>
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="badge bg-success-subtle text-success fw-bold">4.95 ★</span>
+                  <span class="small text-secondary">(218 verified reviews)</span>
+                </div>
+                <p class="small text-secondary mb-3">Equipped with mobile ESD van workstations. We arrive at your doorstep for 45-minute battery & screen swaps.</p>
+                <div class="p-2 rounded-2 bg-surface-subtle border border-subtle small d-flex justify-content-between">
+                  <span class="text-muted">Turnaround: <strong class="text-primary-emphasis">45m</strong></span>
+                  <span class="text-muted">Response: <strong class="text-primary-emphasis">&lt; 5m</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 border-top border-subtle d-flex gap-2">
+              <a href="host-profile.html?host=volt-fix-mobile" class="btn btn-sm btn-outline-secondary flex-grow-1">View Host</a>
+              <a href="booking.html?host=volt-fix-mobile" class="btn-voltara-primary btn-sm flex-grow-1 justify-content-center">Book Van</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Host Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="host-card h-100 d-flex flex-column justify-content-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80" class="host-card-cover" alt="SiliconCraft Rig Studio">
+              <div class="px-3 pb-3">
+                <div class="d-flex justify-content-between align-items-end host-card-avatar-wrapper mb-2">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" class="host-card-avatar" alt="SiliconCraft Rig Studio">
+                  <span class="badge bg-warning text-dark"><i class="bi bi-controller me-1"></i> Console Guild</span>
+                </div>
+                <h4 class="font-heading fw-bold mb-1">SiliconCraft Rig Studio</h4>
+                <div class="text-muted small mb-2"><i class="bi bi-geo-alt me-1"></i> Hardware Hub, Cyber Square #12</div>
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="badge bg-success-subtle text-success fw-bold">4.99 ★</span>
+                  <span class="small text-secondary">(410 verified reviews)</span>
+                </div>
+                <p class="small text-secondary mb-3">PS5 HDMI micro-soldering, Honeywell phase-change repasting, and bespoke liquid-cooling overhauls.</p>
+                <div class="p-2 rounded-2 bg-surface-subtle border border-subtle small d-flex justify-content-between">
+                  <span class="text-muted">Turnaround: <strong class="text-primary-emphasis">2.0h</strong></span>
+                  <span class="text-muted">Response: <strong class="text-primary-emphasis">&lt; 10m</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 border-top border-subtle d-flex gap-2">
+              <a href="host-profile.html?host=silicon-craft" class="btn btn-sm btn-outline-secondary flex-grow-1">View Host</a>
+              <a href="booking.html?host=silicon-craft" class="btn-voltara-primary btn-sm flex-grow-1 justify-content-center">Book Bench</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOW BOOKING WORKS (4-STEP WORKFLOW)
+       ========================================================================== -->
+  <section id="how-it-works" class="py-5 bg-surface-elevated border-top border-bottom border-subtle">
+    <div class="container-custom">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge bg-primary-subtle text-primary text-uppercase letter-spacing-1 mb-2">Transparent Engine</span>
+        <h2 class="font-heading fw-bold mb-2">How Booking Works on Voltara</h2>
+        <p class="text-secondary">From instant quote configuration to real-time bench queue confirmation.</p>
+      </div>
+
+      <div class="row g-4 position-relative">
+        <div class="col-md-6 col-lg-3">
+          <div class="voltara-card h-100 p-4 border border-subtle text-center position-relative">
+            <div class="stat-metric-number text-primary mb-2">01</div>
+            <h5 class="font-heading fw-bold mb-2">Choose a Service</h5>
+            <p class="text-secondary small mb-0">Select your device model, fault diagnosis, and desired parts grade to generate a live instant quote.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="voltara-card h-100 p-4 border border-subtle text-center position-relative">
+            <div class="stat-metric-number text-info mb-2">02</div>
+            <h5 class="font-heading fw-bold mb-2">Select a Host</h5>
+            <p class="text-secondary small mb-0">Compare master certified lab centers, specialized independent technicians, or doorstep mobile vans.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="voltara-card h-100 p-4 border border-subtle text-center position-relative">
+            <div class="stat-metric-number text-success mb-2">03</div>
+            <h5 class="font-heading fw-bold mb-2">Pick a Time</h5>
+            <p class="text-secondary small mb-0">Select an active calendar date and reserved real-time time slot directly from the provider's active bench queue.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="voltara-card h-100 p-4 border border-subtle text-center position-relative">
+            <div class="stat-metric-number text-warning mb-2">04</div>
+            <h5 class="font-heading fw-bold mb-2">Confirm & Pay Deposit</h5>
+            <p class="text-secondary small mb-0">Pay a transparent 25% deposit held in Voltara Escrow. Pay the remaining balance only after inspection.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="booking.html" class="btn-voltara-primary py-3 px-4 fs-6">
+          <i class="bi bi-lightning-charge-fill"></i> Start Your First Booking
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       POPULAR GADGETS DISCOVERY
+       ========================================================================== -->
+  <section class="py-5">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+        <div>
+          <span class="badge bg-primary-subtle text-primary text-uppercase letter-spacing-1 mb-2">Device Ecosystem</span>
+          <h2 class="font-heading fw-bold mb-1">Popular Gadgets Under Service</h2>
+          <p class="text-secondary mb-0">Browse specialized support and available parts inventory for your flagship hardware.</p>
+        </div>
+        <a href="explore.html" class="btn-voltara-outline">
+          <span>Explore All Devices</span> <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Gadget 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="voltara-card h-100 p-3 d-flex flex-column justify-content-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=400&q=80" class="gadget-card-img mb-3" alt="Apple iPhone 15 Pro Max">
+              <span class="badge bg-surface-subtle text-primary small mb-1">Apple</span>
+              <h5 class="font-heading fw-bold fs-6 mb-1">iPhone 15 Pro Max</h5>
+              <div class="small text-muted mb-2">Titanium • A17 Pro</div>
+              <div class="small text-success mb-2"><i class="bi bi-check-circle-fill"></i> 12+ Verified Hosts</div>
+            </div>
+            <div class="pt-2 border-top border-subtle d-flex justify-content-between align-items-center">
+              <div>
+                <span class="text-muted" style="font-size: 0.75rem;">From</span>
+                <div class="fw-bold text-primary-emphasis">₹1,899</div>
+              </div>
+              <a href="explore.html?gadget=iphone-15-pro-max" class="btn btn-sm btn-outline-primary py-1 px-2 rounded">
+                Services <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gadget 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="voltara-card h-100 p-3 d-flex flex-column justify-content-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" class="gadget-card-img mb-3" alt="MacBook Pro 16">
+              <span class="badge bg-surface-subtle text-primary small mb-1">Apple</span>
+              <h5 class="font-heading fw-bold fs-6 mb-1">MacBook Pro 16" (M3 Max)</h5>
+              <div class="small text-muted mb-2">Liquid Retina XDR</div>
+              <div class="small text-success mb-2"><i class="bi bi-check-circle-fill"></i> 8 Pro Labs</div>
+            </div>
+            <div class="pt-2 border-top border-subtle d-flex justify-content-between align-items-center">
+              <div>
+                <span class="text-muted" style="font-size: 0.75rem;">From</span>
+                <div class="fw-bold text-primary-emphasis">₹2,499</div>
+              </div>
+              <a href="explore.html?gadget=macbook-pro-m3" class="btn btn-sm btn-outline-primary py-1 px-2 rounded">
+                Services <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gadget 3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="voltara-card h-100 p-3 d-flex flex-column justify-content-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=400&q=80" class="gadget-card-img mb-3" alt="Sony PlayStation 5 Slim">
+              <span class="badge bg-surface-subtle text-primary small mb-1">Sony</span>
+              <h5 class="font-heading fw-bold fs-6 mb-1">PlayStation 5 Slim</h5>
+              <div class="small text-muted mb-2">HDMI 2.1 • Liquid Metal</div>
+              <div class="small text-success mb-2"><i class="bi bi-check-circle-fill"></i> 9 Specialists</div>
+            </div>
+            <div class="pt-2 border-top border-subtle d-flex justify-content-between align-items-center">
+              <div>
+                <span class="text-muted" style="font-size: 0.75rem;">From</span>
+                <div class="fw-bold text-primary-emphasis">₹1,499</div>
+              </div>
+              <a href="explore.html?gadget=ps5-slim-pro" class="btn btn-sm btn-outline-primary py-1 px-2 rounded">
+                Services <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gadget 4 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="voltara-card h-100 p-3 d-flex flex-column justify-content-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=400&q=80" class="gadget-card-img mb-3" alt="Sony Alpha A7 IV">
+              <span class="badge bg-surface-subtle text-primary small mb-1">Sony</span>
+              <h5 class="font-heading fw-bold fs-6 mb-1">Alpha A7 IV Full-Frame</h5>
+              <div class="small text-muted mb-2">33MP Exmor R • BIONZ XR</div>
+              <div class="small text-success mb-2"><i class="bi bi-check-circle-fill"></i> 5 Pro Cleanrooms</div>
+            </div>
+            <div class="pt-2 border-top border-subtle d-flex justify-content-between align-items-center">
+              <div>
+                <span class="text-muted" style="font-size: 0.75rem;">From</span>
+                <div class="fw-bold text-primary-emphasis">₹2,999</div>
+              </div>
+              <a href="explore.html?gadget=sony-a7-iv" class="btn btn-sm btn-outline-primary py-1 px-2 rounded">
+                Services <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHY VOLTARA
+       ========================================================================== -->
+  <section class="py-5 bg-surface-elevated border-top border-bottom border-subtle">
+    <div class="container-custom">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge bg-primary-subtle text-primary text-uppercase letter-spacing-1 mb-2">Customer Protection</span>
+        <h2 class="font-heading fw-bold mb-2">Why Tech Lovers Choose VOLTARA</h2>
+        <p class="text-secondary">Engineered to eliminate dodgy repair quotes, counterfeit parts, and unpredictable turnaround times.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex gap-3">
+            <div class="dropdown-icon bg-primary-subtle text-primary mt-1"><i class="bi bi-patch-check-fill"></i></div>
+            <div>
+              <h5 class="font-heading fw-bold mb-1">5-Stage Host Verification</h5>
+              <p class="text-secondary small mb-0">Every provider undergoes cleanroom tooling inspection, ESD compliance audits, and background checks.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex gap-3">
+            <div class="dropdown-icon bg-success-subtle text-success mt-1"><i class="bi bi-clock-history"></i></div>
+            <div>
+              <h5 class="font-heading fw-bold mb-1">Real-Time Bench Scheduling</h5>
+              <p class="text-secondary small mb-0">No waiting in lines. Select exact time slots and track live queue progress from drop-off to testing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex gap-3">
+            <div class="dropdown-icon bg-info-subtle text-info mt-1"><i class="bi bi-tag-fill"></i></div>
+            <div>
+              <h5 class="font-heading fw-bold mb-1">Guaranteed Upfront Pricing</h5>
+              <p class="text-secondary small mb-0">Zero hidden fees or surprise billings. The price quoted on your screen is the absolute price you pay.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex gap-3">
+            <div class="dropdown-icon bg-warning-subtle text-warning mt-1"><i class="bi bi-shield-lock-fill"></i></div>
+            <div>
+              <h5 class="font-heading fw-bold mb-1">25% Secure Deposit Escrow</h5>
+              <p class="text-secondary small mb-0">Your deposit is held safely in escrow. Balance is released only after you test and approve your hardware.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex gap-3">
+            <div class="dropdown-icon bg-danger-subtle text-danger mt-1"><i class="bi bi-award-fill"></i></div>
+            <div>
+              <h5 class="font-heading fw-bold mb-1">365-Day Voltara Shield</h5>
+              <p class="text-secondary small mb-0">All parts and labor carry comprehensive warranty coverage backed directly by the Voltara platform.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex gap-3">
+            <div class="dropdown-icon bg-primary-subtle text-primary mt-1"><i class="bi bi-arrow-repeat"></i></div>
+            <div>
+              <h5 class="font-heading fw-bold mb-1">Zero-Hassle Rescheduling</h5>
+              <p class="text-secondary small mb-0">Plans changed? Easily move your appointment slot up to 2 hours prior with zero cancellation penalties.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FINAL CALL TO ACTION
+       ========================================================================== -->
+  <section class="py-5 text-center position-relative overflow-hidden">
+    <div class="container-custom py-4">
+      <div class="voltara-card bg-surface-elevated p-5 rounded-4 border border-primary-subtle shadow-lg max-w-900 mx-auto position-relative">
+        <span class="badge bg-primary-subtle text-primary mb-3">Fast Turnaround Guaranteed</span>
+        <h2 class="font-heading fw-bold mb-3 display-6">Ready to Get Your Device Sorted?</h2>
+        <p class="text-secondary fs-5 mb-4 mx-auto" style="max-width: 600px;">
+          Select your electronics model, choose a verified lab technician or mobile van, and secure your bench slot today with just a 25% deposit.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="booking.html" class="btn-voltara-primary py-3 px-4 fs-6">
+            <i class="bi bi-calendar2-check"></i> Book a Service Now
+          </a>
+          <a href="explore.html" class="btn-voltara-outline py-3 px-4 fs-6">
+            <i class="bi bi-search"></i> Browse All 16+ Categories
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GLOBAL SEARCH MODAL
+       ========================================================================== -->
+  <div class="modal fade" id="voltaraSearchModal" tabindex="-1" aria-labelledby="voltaraSearchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface-elevated border border-medium shadow-lg rounded-4 overflow-hidden">
+        <div class="modal-header border-bottom border-subtle p-3">
+          <div class="d-flex align-items-center gap-2 w-100">
+            <i class="bi bi-search text-primary fs-5"></i>
+            <input type="text" id="globalSearchInput" class="form-control bg-transparent border-0 text-primary shadow-none fs-5" placeholder="Search gadgets, services, hosts, guides..." aria-label="Search">
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3" id="globalSearchResults" style="max-height: 440px; overflow-y: auto;">
+          <div class="search-empty-state text-center py-4 text-muted">
+            <i class="bi bi-search fs-2 mb-2 d-block opacity-50"></i>
+            <p class="mb-0">Type to search gadgets, services, verified hosts, or diagnostic guides...</p>
+          </div>
+        </div>
+        <div class="modal-footer border-top border-subtle py-2 px-3 d-flex justify-content-between text-muted small">
+          <div><kbd class="kbd-shortcut">ESC</kbd> to close</div>
+          <div><kbd class="kbd-shortcut">↑</kbd> <kbd class="kbd-shortcut">↓</kbd> to navigate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="voltara-footer">
+    <div class="container-custom">
+      <div class="row g-4 mb-5">
+        <!-- Brand Col -->
+        <div class="col-lg-4">
+          <a href="index.html" class="brand-logo mb-3">
+            <div class="brand-symbol">
+              <i class="bi bi-cpu-fill"></i>
+            </div>
+            <span class="brand-text">VOLTARA</span>
+          </a>
+          <p class="text-secondary small mb-3">
+            Discover Better Tech. Book Smarter Service. The leading electronics gadgets marketplace and real-time bench booking engine with escrow protection.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="contact.html" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 36px; height: 36px;" aria-label="Support"><i class="bi bi-headset"></i></a>
+            <a href="guides.html" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 36px; height: 36px;" aria-label="Guides"><i class="bi bi-journal-code"></i></a>
+            <a href="about.html" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 36px; height: 36px;" aria-label="About"><i class="bi bi-info-circle"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="col-6 col-lg-2">
+          <h6 class="font-heading fw-bold mb-3 text-primary-emphasis text-uppercase small letter-spacing-1">Services</h6>
+          <ul class="footer-link-group">
+            <li><a href="service-details.html?service=screen-replacement">Screen Replacement</a></li>
+            <li><a href="service-details.html?service=battery-replacement">Battery Replacement</a></li>
+            <li><a href="service-details.html?service=laptop-thermal-overhaul">Thermal Overhaul</a></li>
+            <li><a href="service-details.html?service=device-diagnostics">72-Point Diagnostics</a></li>
+            <li><a href="service-details.html?service=liquid-damage-ultrasonic">Liquid Damage Ultrasonic</a></li>
+            <li><a href="service-details.html?service=console-hdmi-repair">Console HDMI Repair</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Marketplace & Hosts -->
+        <div class="col-6 col-lg-2">
+          <h6 class="font-heading fw-bold mb-3 text-primary-emphasis text-uppercase small letter-spacing-1">Hosts & Network</h6>
+          <ul class="footer-link-group">
+            <li><a href="host-profile.html?host=apex-lab">Apex Tech Labs</a></li>
+            <li><a href="host-profile.html?host=volt-fix-mobile">VoltFix Mobile Van</a></li>
+            <li><a href="host-profile.html?host=silicon-craft">SiliconCraft Studio</a></li>
+            <li><a href="host-setup.html">Host Setup & Slots</a></li>
+            <li><a href="signup.html">Register as Provider</a></li>
+            <li><a href="explore.html">Browse All Hosts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Dispatch Newsletter -->
+        <div class="col-lg-4">
+          <h6 class="font-heading fw-bold mb-3 text-primary-emphasis text-uppercase small letter-spacing-1">Voltara Hardware Dispatch</h6>
+          <p class="text-secondary small mb-3">Subscribe for hardware tear-downs, maintenance tips, and VIP early bench queue slots.</p>
+          <form class="newsletter-form d-flex gap-2">
+            <input type="email" class="form-control-custom" placeholder="engineer@company.com" required>
+            <button type="submit" class="btn-voltara-primary px-3">Join</button>
+          </form>
+          <div class="small text-muted mt-2"><i class="bi bi-shield-check text-success me-1"></i> No spam. Strict engineering updates only.</div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-4 border-top border-subtle d-flex flex-wrap justify-content-between align-items-center gap-3 small text-secondary">
+        <div>
+          © 2026 VOLTARA Inc. All rights reserved. "Discover Better Tech. Book Smarter Service."
+        </div>
+        <div class="d-flex gap-3">
+          <a href="about.html" class="text-secondary">Security & Escrow</a>
+          <a href="guides.html" class="text-secondary">Diagnostic Protocols</a>
+          <a href="contact.html" class="text-secondary">Help Concierge</a>
+          <a href="host-setup.html" class="text-secondary">Host Availability Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/pricing.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Live Hero Quick Price Sync
+    document.addEventListener('DOMContentLoaded', () => {
+      const heroServiceSelect = document.getElementById('heroServiceSelect');
+      const heroPriceDisplay = document.getElementById('heroEstimatedPrice');
+
+      if (heroServiceSelect && heroPriceDisplay) {
+        heroServiceSelect.addEventListener('change', (e) => {
+          const service = VoltaraDB.getServiceById(e.target.value);
+          if (service) {
+            heroPriceDisplay.textContent = VoltaraDB.formatCurrency(service.basePrice);
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

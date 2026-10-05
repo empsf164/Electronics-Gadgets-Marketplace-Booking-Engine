@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Host Profile — Apex Precision Tech Labs | VOLTARA</title>
+  <meta name="description" content="View verified credentials, cleanroom laboratory tooling, working hours, and real-time appointment availability for Apex Precision Tech Labs.">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="voltara-navbar">
+    <div class="container-custom h-100 d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo" aria-label="Voltara Home">
+        <div class="brand-symbol"><i class="bi bi-cpu-fill"></i></div>
+        <div class="d-flex align-items-center">
+          <span class="brand-text">VOLTARA</span>
+          <span class="brand-tag">PRO</span>
+        </div>
+      </a>
+
+      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+        <ul class="nav-menu-list">
+          <li><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li><a href="explore.html" class="nav-link-custom">Explore</a></li>
+          <li><a href="service-details.html?service=screen-replacement" class="nav-link-custom">Services</a></li>
+          <li><a href="host-profile.html?host=apex-lab" class="nav-link-custom active">Hosts</a></li>
+          <li><a href="host-setup.html" class="nav-link-custom">Host Setup</a></li>
+          <li><a href="guides.html" class="nav-link-custom">Guides</a></li>
+          <li><a href="about.html" class="nav-link-custom">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="nav-search-trigger d-none d-sm-flex" data-bs-toggle="modal" data-bs-target="#voltaraSearchModal">
+          <i class="bi bi-search"></i> <span>Search...</span> <span class="kbd-shortcut">Ctrl+K</span>
+        </button>
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+        <a href="booking.html?host=apex-lab" class="btn-voltara-primary">
+          <i class="bi bi-calendar2-check"></i> <span>Book With Host</span>
+        </a>
+        <button type="button" class="navbar-mobile-toggle btn btn-sm btn-outline-secondary d-lg-none d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;">
+          <i class="bi bi-list fs-5"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop"></div>
+  <aside class="voltara-mobile-drawer">
+    <div class="p-3 border-bottom border-subtle d-flex justify-content-between align-items-center">
+      <div class="brand-logo">
+        <div class="brand-symbol" style="width: 32px; height: 32px; font-size: 1rem;"><i class="bi bi-cpu-fill"></i></div>
+        <span class="brand-text fs-5">VOLTARA</span>
+      </div>
+      <button type="button" class="mobile-drawer-close btn btn-sm btn-outline-secondary"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="p-3 d-flex flex-column gap-1">
+      <a href="index.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Home</a>
+      <a href="explore.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Explore Marketplace</a>
+      <a href="service-details.html?service=screen-replacement" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Services</a>
+      <a href="host-profile.html?host=apex-lab" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold active">Verified Hosts</a>
+      <a href="host-setup.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Host Setup Portal</a>
+      <div class="border-top border-subtle mt-3 pt-3">
+        <a href="booking.html?host=apex-lab" class="btn-voltara-primary w-100 justify-content-center py-2"><i class="bi bi-calendar2-check"></i> Book With This Host</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HOST COVER & HEADER PROFILE
+       ========================================================================== -->
+  <section class="position-relative">
+    <div style="height: 240px; width: 100%; overflow: hidden; background-color: var(--bg-surface-elevated);">
+      <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1600&q=80" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.75;" alt="Apex Cleanroom Laboratory">
+    </div>
+
+    <div class="container-custom position-relative" style="margin-top: -65px;">
+      <div class="voltara-card bg-surface-elevated p-4 border border-subtle rounded-4 shadow-lg">
+        <div class="row align-items-center g-4">
+          
+          <div class="col-md-auto text-center text-md-start">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=300&q=80" class="rounded-circle border border-3 border-surface shadow" width="110" height="110" alt="Apex Tech Labs" style="object-fit: cover;">
+          </div>
+
+          <div class="col-md">
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-1">
+              <h1 class="font-heading fw-bold fs-3 mb-0">Apex Precision Tech Labs</h1>
+              <span class="badge bg-primary text-white"><i class="bi bi-patch-check-fill me-1"></i> Master Certified Lab</span>
+              <span class="badge bg-success-subtle text-success"><i class="bi bi-shield-check me-1"></i> ESD Audited</span>
+            </div>
+            <p class="text-secondary small mb-2">Master Micro-Soldering, Apple ACiT Hardware Engineering & Class 100 Cleanroom</p>
+            
+            <div class="d-flex flex-wrap align-items-center gap-3 small text-secondary">
+              <div class="d-flex align-items-center gap-1 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <strong class="text-primary-emphasis">4.98</strong>
+                <span class="text-muted">(342 verified reviews)</span>
+              </div>
+              <span>•</span>
+              <div><i class="bi bi-geo-alt me-1 text-primary"></i> Silicon Boulevard, Tech District</div>
+              <span>•</span>
+              <div><i class="bi bi-briefcase me-1 text-info"></i> 9+ Years Pro Experience</div>
+            </div>
+          </div>
+
+          <div class="col-md-auto d-flex flex-column flex-sm-row gap-2">
+            <a href="booking.html?host=apex-lab" class="btn-voltara-primary py-2 px-4 justify-content-center">
+              <i class="bi bi-calendar2-check"></i> Book With This Host
+            </a>
+            <a href="#host-services-section" class="btn-voltara-outline py-2 px-3 justify-content-center">
+              View Services
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOST PERFORMANCE METRICS STRIP
+       ========================================================================== -->
+  <section class="py-4">
+    <div class="container-custom">
+      <div class="row g-3 text-center">
+        <div class="col-6 col-md-3">
+          <div class="p-3 rounded-3 bg-surface-elevated border border-subtle">
+            <div class="stat-metric-number text-primary fs-3">&lt; 8 Mins</div>
+            <div class="stat-metric-label">Avg Response Time</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 rounded-3 bg-surface-elevated border border-subtle">
+            <div class="stat-metric-number text-success fs-3">2.4 Hours</div>
+            <div class="stat-metric-label">Avg Bench Turnaround</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 rounded-3 bg-surface-elevated border border-subtle">
+            <div class="stat-metric-number text-info fs-3">99.4%</div>
+            <div class="stat-metric-label">First-Time Fix Rate</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3 rounded-3 bg-surface-elevated border border-subtle">
+            <div class="stat-metric-number text-warning fs-3">1,840+</div>
+            <div class="stat-metric-label">Completed Bookings</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOST PROFILE DETAILS & WORKING HOURS
+       ========================================================================== -->
+  <main class="py-4">
+    <div class="container-custom">
+      <div class="row g-5">
+        
+        <!-- Left: Bio, Equipment, Certifications, Reviews -->
+        <div class="col-lg-8">
+          
+          <!-- About -->
+          <div class="mb-5">
+            <h3 class="font-heading fw-bold mb-3 fs-4">About the Laboratory</h3>
+            <p class="text-secondary">
+              Apex Precision Tech Labs is a specialized high-density electronics service center equipped with Class 100 laminar flow benches, Weller and JBC micro-soldering stations, and FLIR thermal analyzers. With over 9 years of precision micro-repair, our certified engineers handle motherboard diagnostics that other shops turn away.
+            </p>
+            <p class="text-secondary">
+              Every device admitted to our queue is handled on anti-static conductive mats with calibrated wrist grounding, and stored in nitrogen dry cabinets during overnight testing.
+            </p>
+          </div>
+
+          <!-- Laboratory Tooling Showcase -->
+          <div class="mb-5">
+            <h4 class="font-heading fw-bold mb-3 fs-5">Laboratory Equipment & Bench Specs</h4>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-surface-elevated border border-subtle h-100">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-moisture text-info fs-4"></i>
+                    <div class="fw-bold text-primary-emphasis">Branson 40kHz Ultrasonic Tank</div>
+                  </div>
+                  <div class="small text-secondary">High-cavitation fluid agitation for flawless logic board liquid de-corrosion.</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-surface-elevated border border-subtle h-100">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-search text-primary fs-4"></i>
+                    <div class="fw-bold text-primary-emphasis">FLIR Infrared Thermal Scan</div>
+                  </div>
+                  <div class="small text-secondary">Pinpoints micro-shorted 0201 ceramic capacitors down to 0.05°C temperature rise.</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-surface-elevated border border-subtle h-100">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-fan text-warning fs-4"></i>
+                    <div class="fw-bold text-primary-emphasis">Class 100 Laminar Hoods</div>
+                  </div>
+                  <div class="small text-secondary">HEPA filtered zero-dust environment for spotless sensor & OLED swaps.</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-surface-elevated border border-subtle h-100">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-lightning-charge text-success fs-4"></i>
+                    <div class="fw-bold text-primary-emphasis">JBC Precision Nano-Soldering</div>
+                  </div>
+                  <div class="small text-secondary">0.1mm micro-pencil tips for BGA IC and HDMI 2.1 pad restoration.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Services Offered List -->
+          <div id="host-services-section" class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="font-heading fw-bold mb-0 fs-5">Services Offered by Apex</h4>
+              <span class="badge bg-primary-subtle text-primary">5 Available</span>
+            </div>
+
+            <div class="d-flex flex-column gap-3">
+              <div class="voltara-card p-3 d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+                <div>
+                  <h5 class="font-heading fw-bold mb-1 fs-6">Ultra Retina & OLED Screen Replacement</h5>
+                  <div class="small text-muted mb-1"><i class="bi bi-clock me-1"></i> Turnaround: 2 Hours • Class 100 Cleanroom Bench</div>
+                  <span class="badge bg-surface-subtle text-secondary">365-Day Shield Warranty</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between justify-content-sm-end gap-3">
+                  <div class="text-sm-end">
+                    <div class="small text-muted">Fixed Price</div>
+                    <div class="fw-bold text-primary fs-5">₹3,899</div>
+                  </div>
+                  <a href="booking.html?service=screen-replacement&host=apex-lab" class="btn-voltara-primary btn-sm">Book Bench</a>
+                </div>
+              </div>
+
+              <div class="voltara-card p-3 d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+                <div>
+                  <h5 class="font-heading fw-bold mb-1 fs-6">High-Capacity OEM Battery Replacement</h5>
+                  <div class="small text-muted mb-1"><i class="bi bi-clock me-1"></i> Turnaround: 45 Mins • 0-Cycle Health Calibration</div>
+                  <span class="badge bg-surface-subtle text-secondary">6-Month Warranty</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between justify-content-sm-end gap-3">
+                  <div class="text-sm-end">
+                    <div class="small text-muted">Fixed Price</div>
+                    <div class="fw-bold text-primary fs-5">₹1,999</div>
+                  </div>
+                  <a href="booking.html?service=battery-replacement&host=apex-lab" class="btn-voltara-primary btn-sm">Book Bench</a>
+                </div>
+              </div>
+
+              <div class="voltara-card p-3 d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+                <div>
+                  <h5 class="font-heading fw-bold mb-1 fs-6">Ultrasonic Liquid Damage Rescue & Board Repair</h5>
+                  <div class="small text-muted mb-1"><i class="bi bi-clock me-1"></i> Turnaround: 24 Hours • 40kHz Branson Wash</div>
+                  <span class="badge bg-surface-subtle text-secondary">90-Day Water Guarantee</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between justify-content-sm-end gap-3">
+                  <div class="text-sm-end">
+                    <div class="small text-muted">Fixed Price</div>
+                    <div class="fw-bold text-primary fs-5">₹3,499</div>
+                  </div>
+                  <a href="booking.html?service=liquid-damage-ultrasonic&host=apex-lab" class="btn-voltara-primary btn-sm">Book Bench</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Verified Customer Reviews -->
+          <div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="font-heading fw-bold mb-0 fs-5">Verified Customer Reviews</h4>
+              <span class="badge bg-success-subtle text-success">4.98 ★ Average</span>
+            </div>
+
+            <div class="d-flex flex-column gap-3">
+              <div class="p-3 rounded-3 bg-surface-elevated border border-subtle">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="fw-bold text-primary-emphasis">Devon Vance</div>
+                    <span class="badge bg-surface-subtle text-muted">Hardware Architect</span>
+                  </div>
+                  <div class="text-warning small"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                </div>
+                <div class="small text-muted mb-2">Service: <strong>Liquid Damage Ultrasonic Rescue</strong> • 3 days ago</div>
+                <p class="small text-secondary mb-0">
+                  "My MacBook M3 Max suffered a severe coffee spill. Apple quoted ₹90,000 for full board swap. Apex rescued the board within 24 hours, replaced 3 corroded power FETs, and saved all my uncommitted code. Absolute masters."
+                </p>
+              </div>
+
+              <div class="p-3 rounded-3 bg-surface-elevated border border-subtle">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="fw-bold text-primary-emphasis">Elena Rostova</div>
+                    <span class="badge bg-surface-subtle text-muted">Mobile App Lead</span>
+                  </div>
+                  <div class="text-warning small"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                </div>
+                <div class="small text-muted mb-2">Service: <strong>Screen Replacement</strong> • 1 week ago</div>
+                <p class="small text-secondary mb-0">
+                  "Flawless OEM screen swap on my 15 Pro Max. TrueTone intact, 120Hz butter smooth, and finished in exactly 90 minutes while I worked from their clean waiting lounge."
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Schedule Preview & Working Hours Card -->
+        <div class="col-lg-4">
+          <div class="voltara-card bg-surface-elevated p-4 border border-subtle rounded-4 shadow sticky-top" style="top: 96px; z-index: 10;">
+            
+            <h5 class="font-heading fw-bold mb-3 fs-6 d-flex align-items-center gap-2">
+              <i class="bi bi-calendar-check text-primary"></i> Working Hours & Location
+            </h5>
+
+            <div class="p-3 rounded-3 bg-surface-subtle border border-subtle mb-3">
+              <div class="small text-muted mb-1">Weekly Operating Schedule</div>
+              <div class="d-flex justify-content-between py-1 small border-bottom border-subtle">
+                <span class="text-secondary">Monday - Friday</span>
+                <strong class="text-primary-emphasis">08:30 AM - 07:30 PM</strong>
+              </div>
+              <div class="d-flex justify-content-between py-1 small border-bottom border-subtle">
+                <span class="text-secondary">Saturday</span>
+                <strong class="text-primary-emphasis">09:00 AM - 06:00 PM</strong>
+              </div>
+              <div class="d-flex justify-content-between py-1 small">
+                <span class="text-secondary">Sunday</span>
+                <span class="badge bg-danger-subtle text-danger">Closed (Cleanroom Rest)</span>
+              </div>
+            </div>
+
+            <!-- Booking Rules -->
+            <div class="p-3 rounded-3 bg-surface-subtle border border-subtle mb-4">
+              <div class="small text-muted mb-1">Host Booking Rules</div>
+              <div class="d-flex justify-content-between py-1 small border-bottom border-subtle">
+                <span class="text-secondary">Deposit Required:</span>
+                <strong class="text-primary">25% Escrow</strong>
+              </div>
+              <div class="d-flex justify-content-between py-1 small border-bottom border-subtle">
+                <span class="text-secondary">Free Cancellation:</span>
+                <strong class="text-success">Up to 2h Prior</strong>
+              </div>
+              <div class="d-flex justify-content-between py-1 small">
+                <span class="text-secondary">Slot Duration:</span>
+                <strong class="text-primary-emphasis">60 Mins Bench</strong>
+              </div>
+            </div>
+
+            <a href="booking.html?host=apex-lab" class="btn-voltara-primary w-100 py-3 justify-content-center fs-6">
+              <i class="bi bi-calendar2-check"></i> Book With Apex Labs
+            </a>
+
+            <div class="text-center mt-3">
+              <a href="host-setup.html" class="small text-muted text-decoration-none">
+                <i class="bi bi-gear me-1"></i> Are you this host? Configure settings
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Search Modal -->
+  <div class="modal fade" id="voltaraSearchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface-elevated border border-medium shadow-lg rounded-4 overflow-hidden">
+        <div class="modal-header border-bottom border-subtle p-3">
+          <div class="d-flex align-items-center gap-2 w-100">
+            <i class="bi bi-search text-primary fs-5"></i>
+            <input type="text" id="globalSearchInput" class="form-control bg-transparent border-0 text-primary shadow-none fs-5" placeholder="Search gadgets, services, hosts, guides..." aria-label="Search">
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3" id="globalSearchResults" style="max-height: 440px; overflow-y: auto;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="voltara-footer">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 small text-secondary">
+        <div>© 2026 VOLTARA Inc. "Discover Better Tech. Book Smarter Service."</div>
+        <div class="d-flex gap-3">
+          <a href="explore.html" class="text-secondary">All Services</a>
+          <a href="host-setup.html" class="text-secondary">Host Availability Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/pricing.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

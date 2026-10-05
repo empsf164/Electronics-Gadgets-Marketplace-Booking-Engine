@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Guides & Diagnostic Protocols — VOLTARA</title>
+  <meta name="description" content="Deep-dive teardowns, thermal throttling guides, water damage emergency protocols, and OLED display diagnostic checklists.">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="voltara-navbar">
+    <div class="container-custom h-100 d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo" aria-label="Voltara Home">
+        <div class="brand-symbol"><i class="bi bi-cpu-fill"></i></div>
+        <div class="d-flex align-items-center">
+          <span class="brand-text">VOLTARA</span>
+          <span class="brand-tag">DISPATCH</span>
+        </div>
+      </a>
+
+      <nav class="d-none d-lg-block">
+        <ul class="nav-menu-list">
+          <li><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li><a href="explore.html" class="nav-link-custom">Explore</a></li>
+          <li><a href="service-details.html?service=screen-replacement" class="nav-link-custom">Services</a></li>
+          <li><a href="host-profile.html?host=apex-lab" class="nav-link-custom">Hosts</a></li>
+          <li><a href="guides.html" class="nav-link-custom active">Guides</a></li>
+          <li><a href="about.html" class="nav-link-custom">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="nav-search-trigger d-none d-sm-flex" data-bs-toggle="modal" data-bs-target="#voltaraSearchModal">
+          <i class="bi bi-search"></i> <span>Search...</span> <span class="kbd-shortcut">Ctrl+K</span>
+        </button>
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+        <a href="booking.html" class="btn-voltara-primary">
+          <i class="bi bi-calendar2-check"></i> <span>Book a Service</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Guides Hero -->
+  <section class="py-5 bg-surface-subtle border-bottom border-subtle">
+    <div class="container-custom">
+      <div class="max-w-700">
+        <span class="badge bg-primary-subtle text-primary text-uppercase letter-spacing-1 mb-2">Voltara Engineering Dispatch</span>
+        <h1 class="font-heading fw-bold fs-2 mb-2">Technical Guides & Teardowns</h1>
+        <p class="text-secondary small mb-0">Peer-reviewed diagnostic protocols, thermal paste chemistry, and preventative hardware maintenance written by certified lab technicians.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Articles Grid -->
+  <main class="py-5">
+    <div class="container-custom">
+      
+      <!-- Featured Hero Article -->
+      <div class="voltara-card bg-surface-elevated p-0 border border-subtle rounded-4 overflow-hidden mb-5 shadow-lg">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-7">
+            <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=900&q=80" style="height: 380px; width: 100%; object-fit: cover;" alt="Thermal Overhaul Guide">
+          </div>
+          <div class="col-lg-5 p-4 p-md-5">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="badge bg-danger-subtle text-danger">Featured Deep Dive</span>
+              <span class="small text-muted">6 min read</span>
+            </div>
+            <h2 class="font-heading fw-bold fs-3 mb-3">The 2026 Thermal Throttling Survival Guide: Liquid Metal vs PTM7950</h2>
+            <p class="text-secondary small mb-4">Why modern thin-and-light workstations throttle within 18 months, and how phase-change Honeywell PTM7950 solves pump-out degradation permanently.</p>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top border-subtle">
+              <div class="small text-muted">By <strong class="text-primary-emphasis">Alex Rivera</strong>, Thermal Lead</div>
+              <a href="service-details.html?service=laptop-thermal-overhaul" class="btn btn-sm btn-outline-primary">Book Thermal Service <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article Grid -->
+      <div class="row g-4">
+        
+        <!-- Guide 2 -->
+        <div class="col-md-6 col-lg-4" id="water-damage-first-60-mins">
+          <div class="voltara-card h-100 p-0 border border-subtle rounded-3 overflow-hidden d-flex flex-column justify-content-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80" style="height: 190px; width: 100%; object-fit: cover;" alt="Water Damage">
+              <div class="p-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-info-subtle text-info">Troubleshooting</span>
+                  <span class="small text-muted">4 min read</span>
+                </div>
+                <h4 class="font-heading fw-bold fs-5 mb-2">Water Damage Protocol: The Golden 60 Minutes</h4>
+                <p class="text-secondary small mb-0">Step-by-step triage when electronics get drenched. Why the rice myth destroys motherboards and how galvanic corrosion occurs.</p>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+                <span class="small text-muted">By Samira Patel</span>
+                <a href="service-details.html?service=liquid-damage-ultrasonic" class="small text-primary fw-semibold">Emergency Rescue <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guide 3 -->
+        <div class="col-md-6 col-lg-4" id="oled-burn-in-checklist">
+          <div class="voltara-card h-100 p-0 border border-subtle rounded-3 overflow-hidden d-flex flex-column justify-content-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=500&q=80" style="height: 190px; width: 100%; object-fit: cover;" alt="OLED Display">
+              <div class="p-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-warning-subtle text-warning">Display Diagnostics</span>
+                  <span class="small text-muted">5 min read</span>
+                </div>
+                <h4 class="font-heading fw-bold fs-5 mb-2">OLED Degradation vs Image Retention Checklist</h4>
+                <p class="text-secondary small mb-0">How to distinguish temporary pixel persistence from irreversible sub-pixel emitter burnout on modern OLED and mini-LED panels.</p>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+                <span class="small text-muted">By David Chen</span>
+                <a href="service-details.html?service=screen-replacement" class="small text-primary fw-semibold">Screen Calibration <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guide 4 -->
+        <div class="col-md-6 col-lg-4" id="matter-thread-smart-home">
+          <div class="voltara-card h-100 p-0 border border-subtle rounded-3 overflow-hidden d-flex flex-column justify-content-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=500&q=80" style="height: 190px; width: 100%; object-fit: cover;" alt="Smart Home Thread">
+              <div class="p-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-success-subtle text-success">Smart Home</span>
+                  <span class="small text-muted">7 min read</span>
+                </div>
+                <h4 class="font-heading fw-bold fs-5 mb-2">Matter 1.3 & Thread: Zero-Latency Offline Ecosystems</h4>
+                <p class="text-secondary small mb-0">Banish cloud latency. How IPv6-based Thread mesh border routers create self-healing home networks that trigger in under 15ms.</p>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <div class="pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+                <span class="small text-muted">By Elena Rostova</span>
+                <a href="service-details.html?service=smart-home-thread-setup" class="small text-primary fw-semibold">Matter Setup <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Search Modal -->
+  <div class="modal fade" id="voltaraSearchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface-elevated border border-medium shadow-lg rounded-4 overflow-hidden">
+        <div class="modal-header border-bottom border-subtle p-3">
+          <div class="d-flex align-items-center gap-2 w-100">
+            <i class="bi bi-search text-primary fs-5"></i>
+            <input type="text" id="globalSearchInput" class="form-control bg-transparent border-0 text-primary shadow-none fs-5" placeholder="Search gadgets, services, hosts, guides...">
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-3" id="globalSearchResults" style="max-height: 440px; overflow-y: auto;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="voltara-footer">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 small text-secondary">
+        <div>© 2026 VOLTARA Inc. "Discover Better Tech. Book Smarter Service."</div>
+        <div class="d-flex gap-3">
+          <a href="about.html" class="text-secondary">About</a>
+          <a href="contact.html" class="text-secondary">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
