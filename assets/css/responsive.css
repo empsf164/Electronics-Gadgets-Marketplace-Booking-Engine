@@ -35,6 +35,63 @@
     padding: 0.5rem 1rem;
     font-size: 0.88rem;
   }
+
+  /* When sidebar filter is collapsed on < 1200px, main marketplace column expands to 100% full width */
+  .marketplace-main-row > aside,
+  .marketplace-main-row > .col-12,
+  .marketplace-main-row > [class*="col-xl-"] {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  #mobileFilterCollapse .voltara-card {
+    position: static !important;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   TABLET & 1024PX VIEWPORTS (768px to 1024px)
+   Align 2 cards in one row and center-align the last odd number card
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* 2 Cards in one row across all sections in all pages */
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-lg-4"],
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-lg-3"],
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-4"],
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-3"],
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-6"],
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-sm-6"],
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-6"],
+  #homeServicesGrid > div,
+  #marketplaceResultsGrid > div:not(.col-12),
+  .hero-stats-banner .row > div,
+  .why-voltara-section .row > div,
+  .row:not(.marketplace-main-row) > div:has(> .host-card),
+  .row:not(.marketplace-main-row) > div:has(> .contact-social-card) {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+
+  /* Last odd number card in center alignment */
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-lg-4"]:last-child:nth-child(odd),
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-lg-3"]:last-child:nth-child(odd),
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-4"]:last-child:nth-child(odd),
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-3"]:last-child:nth-child(odd),
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-6"]:last-child:nth-child(odd),
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-sm-6"]:last-child:nth-child(odd),
+  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-6"]:last-child:nth-child(odd),
+  #homeServicesGrid > div:last-child:nth-child(odd),
+  #marketplaceResultsGrid > div:not(.col-12):last-child:nth-child(odd),
+  .hero-stats-banner .row > div:last-child:nth-child(odd),
+  .why-voltara-section .row > div:last-child:nth-child(odd),
+  .row:not(.marketplace-main-row) > div:has(> .host-card):last-child:nth-child(odd),
+  .row:not(.marketplace-main-row) > div:has(> .contact-social-card):last-child:nth-child(odd) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -43,7 +100,9 @@
 @media (max-width: 991.98px) {
   .nav-menu-list,
   .nav-search-trigger,
-  .nav-auth-buttons {
+  .nav-auth-buttons,
+  .voltara-navbar .nav-actions .btn-voltara-primary,
+  .voltara-navbar .nav-actions .btn-voltara-outline {
     display: none !important;
   }
 
@@ -87,6 +146,15 @@
 
   .stat-metric-number {
     font-size: 1.4rem;
+  }
+
+  /* Marketplace Results on Mobile: 1 card per row */
+  #marketplaceResultsGrid > div {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   /* Stepper mobile compaction */

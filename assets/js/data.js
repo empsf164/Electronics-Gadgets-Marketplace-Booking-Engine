@@ -119,7 +119,7 @@ const VOLTARA_DATA = {
   services: [
     {
       id: "screen-replacement",
-      title: "Ultra Retina & OLED Screen Replacement",
+      title: "Ultra Retina & LTPO OLED Screen Assembly Replacement",
       category: "repairs",
       categoryLabel: "Hardware Repair",
       targetDevices: ["Smartphones", "Laptops", "Tablets"],
@@ -160,7 +160,7 @@ const VOLTARA_DATA = {
     },
     {
       id: "battery-replacement",
-      title: "High-Capacity OEM Battery Replacement",
+      title: "High-Capacity OEM Battery Replacement & Health Calibration",
       category: "maintenance",
       categoryLabel: "Battery & Power",
       targetDevices: ["Smartphones", "Laptops", "Tablets", "Smartwatches"],
@@ -197,7 +197,7 @@ const VOLTARA_DATA = {
     },
     {
       id: "laptop-thermal-overhaul",
-      title: "Liquid Metal & PTM7950 Thermal Overhaul",
+      title: "Liquid Metal & Honeywell PTM7950 Phase-Change Thermal Overhaul",
       category: "performance",
       categoryLabel: "PC & Laptop Tuning",
       targetDevices: ["Laptops", "Gaming Rigs", "Consoles"],

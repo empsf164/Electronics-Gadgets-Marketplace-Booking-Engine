@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="voltaraBrandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#00D2FF" />
+    </linearGradient>
+  </defs>
+  <!-- Brand Symbol Gradient Container (Matches .brand-symbol) -->
+  <rect width="64" height="64" rx="14" fill="url(#voltaraBrandGrad)" />
+  
+  <!-- Centered White CPU Icon (bi-cpu-fill) -->
+  <g transform="translate(12, 12) scale(2.5)" fill="#FFFFFF">
+    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H3.5A1.5 1.5 0 0 0 2 4.5V6H1.5A1.5 1.5 0 0 0 0 7.5v1A1.5 1.5 0 0 0 1.5 10H2v1.5A1.5 1.5 0 0 0 3.5 13H5v.5A1.5 1.5 0 0 0 6.5 15h1a1.5 1.5 0 0 0 1.5-1.5V13h1.5a1.5 1.5 0 0 0 1.5-1.5V10h.5A1.5 1.5 0 0 0 16 8.5v-1A1.5 1.5 0 0 0 14.5 6H14V4.5A1.5 1.5 0 0 0 12.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm-.5 3h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1"/>
+  </g>
+</svg>
