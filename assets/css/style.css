@@ -969,3 +969,103 @@
   filter: invert(90%) hue-rotate(180deg) contrast(95%);
 }
 
+/* --------------------------------------------------------------------------
+   BACK TO TOP BUTTON
+   -------------------------------------------------------------------------- */
+.voltara-back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 18px rgba(var(--color-primary-rgb), 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  z-index: 1060;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px) scale(0.85);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.voltara-back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.voltara-back-to-top:hover {
+  box-shadow: 0 8px 25px rgba(var(--color-primary-rgb), 0.7);
+  transform: translateY(-4px) scale(1.08);
+  color: #FFFFFF !important;
+}
+
+.voltara-back-to-top:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* --------------------------------------------------------------------------
+   BUTTON TEXT CENTERING & CONSISTENCY ACROSS ALL VIEWS
+   -------------------------------------------------------------------------- */
+.btn-voltara-primary,
+.btn-voltara-outline,
+.host-card .btn,
+.host-card .btn-voltara-primary,
+.host-card .btn-outline-secondary,
+.host-card .btn-voltara-outline,
+.service-card-btn,
+.password-toggle-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* --------------------------------------------------------------------------
+   AUTH & GENERAL LINK HOVER STYLES
+   -------------------------------------------------------------------------- */
+a {
+  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-electric-cyan);
+}
+
+.form-check-label a,
+.voltara-card a.text-primary,
+.auth-footer a,
+a.text-primary {
+  transition: all var(--transition-fast);
+}
+
+.form-check-label a:hover,
+.voltara-card a.text-primary:hover,
+.auth-footer a:hover,
+a.text-primary:hover {
+  color: var(--color-electric-cyan) !important;
+  text-decoration: underline !important;
+}
+
+/* Password Toggle Eye Button */
+.password-toggle-btn {
+  background-color: var(--bg-surface-subtle);
+  border-color: var(--border-medium);
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.password-toggle-btn:hover {
+  background-color: var(--bg-surface-elevated);
+  border-color: var(--border-accent);
+  color: var(--text-primary);
+}
+

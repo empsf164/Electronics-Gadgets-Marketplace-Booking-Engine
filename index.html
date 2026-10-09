@@ -49,6 +49,9 @@
             <a href="index.html" class="nav-link-custom active">Home</a>
           </li>
           <li>
+            <a href="about.html" class="nav-link-custom">About</a>
+          </li>
+          <li>
             <a href="explore.html" class="nav-link-custom">Services</a>
           </li>
           <li>
@@ -56,9 +59,6 @@
           </li>
           <li>
             <a href="guides.html" class="nav-link-custom">Guides</a>
-          </li>
-          <li>
-            <a href="about.html" class="nav-link-custom">About</a>
           </li>
           <li>
             <a href="contact.html" class="nav-link-custom">Contact</a>
@@ -115,10 +115,10 @@
     <div class="p-3">
       <div class="d-flex flex-column gap-1">
         <a href="index.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold active">Home</a>
+        <a href="about.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">About</a>
         <a href="explore.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Services</a>
         <a href="host-profile.html?host=apex-lab" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Hosts</a>
         <a href="guides.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Guides</a>
-        <a href="about.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">About</a>
         <a href="contact.html" class="nav-link-custom py-2 px-3 rounded-2 fw-semibold">Contact</a>
       </div>
 
@@ -173,11 +173,11 @@
           </div>
 
           <!-- Hero Action Buttons -->
-          <div class="d-flex flex-wrap align-items-center gap-3">
-            <a href="explore.html" class="btn-voltara-primary py-3 px-4 fs-6">
+          <div class="hero-action-buttons d-flex flex-wrap align-items-center gap-3">
+            <a href="explore.html" class="btn-voltara-primary py-3 px-4 fs-6 justify-content-center">
               <i class="bi bi-grid-3x3-gap-fill"></i> Explore Services
             </a>
-            <a href="host-profile.html?host=apex-lab" class="btn-voltara-outline py-3 px-4 fs-6">
+            <a href="host-profile.html?host=apex-lab" class="btn-voltara-outline py-3 px-4 fs-6 justify-content-center">
               <i class="bi bi-person-badge"></i> Find a Host
             </a>
           </div>
@@ -486,12 +486,14 @@
           <div class="host-card h-100 d-flex flex-column justify-content-between">
             <div>
               <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80"
-                class="host-card-cover" alt="Apex Tech Labs">
+                class="host-card-cover" alt="Apex Tech Labs"
+                onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 400 250\' width=\'100%25\' height=\'100%25\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23141A27\'/%3E%3Cpath d=\'M200 80a35 35 0 0 1 35 35v10a35 35 0 0 1-70 0v-10a35 35 0 0 1 35-35zm-50 90h100c15 0 25 10 25 25v15H125v-15c0-15 10-25 25-25z\' fill=\'%230066FF\' opacity=\'0.4\'/%3E%3Ctext x=\'50%25\' y=\'82%25\' font-family=\'sans-serif\' font-size=\'14\' fill=\'%2394A3B8\' text-anchor=\'middle\' font-weight=\'600\'%3EVOLTARA LAB FACILITY%3C/text%3E%3C/svg%3E';">
               <div class="px-3 pb-3">
                 <div class="d-flex justify-content-between align-items-end host-card-avatar-wrapper mb-2">
                   <img
                     src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=150&q=80"
-                    class="host-card-avatar" alt="Apex Tech Labs">
+                    class="host-card-avatar" alt="Apex Tech Labs"
+                    onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\' width=\'100%25\' height=\'100%25\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'50\' fill=\'%230066FF\'/%3E%3Ctext x=\'50%25\' y=\'58%25\' font-family=\'sans-serif\' font-size=\'28\' fill=\'%23FFFFFF\' text-anchor=\'middle\' font-weight=\'bold\'%3EA%3C/text%3E%3C/svg%3E';">
                   <span class="badge bg-primary text-white"><i class="bi bi-patch-check-fill me-1"></i> Master
                     Certified</span>
                 </div>
@@ -511,10 +513,10 @@
               </div>
             </div>
             <div class="p-3 border-top border-subtle d-flex gap-2">
-              <a href="host-profile.html?host=apex-lab" class="btn btn-sm btn-outline-secondary flex-grow-1">View
+              <a href="host-profile.html?host=apex-lab" class="btn btn-sm btn-outline-secondary flex-grow-1 d-flex align-items-center justify-content-center text-center">View
                 Host</a>
               <a href="booking.html?host=apex-lab"
-                class="btn-voltara-primary btn-sm flex-grow-1 justify-content-center">Book Bench</a>
+                class="btn-voltara-primary btn-sm flex-grow-1 d-flex align-items-center justify-content-center text-center">Book Bench</a>
             </div>
           </div>
         </div>
@@ -524,12 +526,14 @@
           <div class="host-card h-100 d-flex flex-column justify-content-between">
             <div>
               <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80"
-                class="host-card-cover" alt="VoltFix Mobile Techs">
+                class="host-card-cover" alt="VoltFix Mobile Techs"
+                onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 400 250\' width=\'100%25\' height=\'100%25\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23141A27\'/%3E%3Cpath d=\'M200 80a35 35 0 0 1 35 35v10a35 35 0 0 1-70 0v-10a35 35 0 0 1 35-35zm-50 90h100c15 0 25 10 25 25v15H125v-15c0-15 10-25 25-25z\' fill=\'%2300D2FF\' opacity=\'0.4\'/%3E%3Ctext x=\'50%25\' y=\'82%25\' font-family=\'sans-serif\' font-size=\'14\' fill=\'%2394A3B8\' text-anchor=\'middle\' font-weight=\'600\'%3EVOLTARA MOBILE VAN%3C/text%3E%3C/svg%3E';">
               <div class="px-3 pb-3">
                 <div class="d-flex justify-content-between align-items-end host-card-avatar-wrapper mb-2">
                   <img
                     src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
-                    class="host-card-avatar" alt="VoltFix Mobile Techs">
+                    class="host-card-avatar" alt="VoltFix Mobile Techs"
+                    onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\' width=\'100%25\' height=\'100%25\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'50\' fill=\'%2300D2FF\'/%3E%3Ctext x=\'50%25\' y=\'58%25\' font-family=\'sans-serif\' font-size=\'28\' fill=\'%23000000\' text-anchor=\'middle\' font-weight=\'bold\'%3EV%3C/text%3E%3C/svg%3E';">
                   <span class="badge bg-info text-dark"><i class="bi bi-truck me-1"></i> Mobile Van Fleet</span>
                 </div>
                 <h4 class="font-heading fw-bold mb-1">VoltFix Mobile Specialists</h4>
@@ -547,10 +551,10 @@
               </div>
             </div>
             <div class="p-3 border-top border-subtle d-flex gap-2">
-              <a href="host-profile.html?host=volt-fix-mobile" class="btn btn-sm btn-outline-secondary flex-grow-1">View
+              <a href="host-profile.html?host=volt-fix-mobile" class="btn btn-sm btn-outline-secondary flex-grow-1 d-flex align-items-center justify-content-center text-center">View
                 Host</a>
               <a href="booking.html?host=volt-fix-mobile"
-                class="btn-voltara-primary btn-sm flex-grow-1 justify-content-center">Book Van</a>
+                class="btn-voltara-primary btn-sm flex-grow-1 d-flex align-items-center justify-content-center text-center">Book Van</a>
             </div>
           </div>
         </div>
@@ -560,12 +564,14 @@
           <div class="host-card h-100 d-flex flex-column justify-content-between">
             <div>
               <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80"
-                class="host-card-cover" alt="SiliconCraft Rig Studio">
+                class="host-card-cover" alt="SiliconCraft Rig Studio"
+                onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 400 250\' width=\'100%25\' height=\'100%25\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23141A27\'/%3E%3Cpath d=\'M200 80a35 35 0 0 1 35 35v10a35 35 0 0 1-70 0v-10a35 35 0 0 1 35-35zm-50 90h100c15 0 25 10 25 25v15H125v-15c0-15 10-25 25-25z\' fill=\'%23F59E0B\' opacity=\'0.4\'/%3E%3Ctext x=\'50%25\' y=\'82%25\' font-family=\'sans-serif\' font-size=\'14\' fill=\'%2394A3B8\' text-anchor=\'middle\' font-weight=\'600\'%3EVOLTARA CONSOLE RIG%3C/text%3E%3C/svg%3E';">
               <div class="px-3 pb-3">
                 <div class="d-flex justify-content-between align-items-end host-card-avatar-wrapper mb-2">
                   <img
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
-                    class="host-card-avatar" alt="SiliconCraft Rig Studio">
+                    class="host-card-avatar" alt="SiliconCraft Rig Studio"
+                    onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\' width=\'100%25\' height=\'100%25\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'50\' fill=\'%23F59E0B\'/%3E%3Ctext x=\'50%25\' y=\'58%25\' font-family=\'sans-serif\' font-size=\'28\' fill=\'%23000000\' text-anchor=\'middle\' font-weight=\'bold\'%3ES%3C/text%3E%3C/svg%3E';">
                   <span class="badge bg-warning text-dark"><i class="bi bi-controller me-1"></i> Console Guild</span>
                 </div>
                 <h4 class="font-heading fw-bold mb-1">SiliconCraft Rig Studio</h4>
@@ -584,10 +590,10 @@
               </div>
             </div>
             <div class="p-3 border-top border-subtle d-flex gap-2">
-              <a href="host-profile.html?host=silicon-craft" class="btn btn-sm btn-outline-secondary flex-grow-1">View
+              <a href="host-profile.html?host=silicon-craft" class="btn btn-sm btn-outline-secondary flex-grow-1 d-flex align-items-center justify-content-center text-center">View
                 Host</a>
               <a href="booking.html?host=silicon-craft"
-                class="btn-voltara-primary btn-sm flex-grow-1 justify-content-center">Book Bench</a>
+                class="btn-voltara-primary btn-sm flex-grow-1 d-flex align-items-center justify-content-center text-center">Book Bench</a>
             </div>
           </div>
         </div>
@@ -671,13 +677,14 @@
         </a>
       </div>
 
-      <div class="row g-4">
+      <div class="row g-4 device-ecosystem-grid">
         <!-- Gadget 1 -->
-        <div class="col-6 col-md-4 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3">
           <div class="voltara-card h-100 p-3 d-flex flex-column justify-content-between">
             <div>
               <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=400&q=80"
-                class="gadget-card-img mb-3" alt="Apple iPhone 15 Pro Max">
+                class="gadget-card-img mb-3" alt="Apple iPhone 15 Pro Max"
+                onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 400 250\' width=\'100%25\' height=\'100%25\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23141A27\'/%3E%3Cpath d=\'M200 80a35 35 0 0 1 35 35v10a35 35 0 0 1-70 0v-10a35 35 0 0 1 35-35zm-50 90h100c15 0 25 10 25 25v15H125v-15c0-15 10-25 25-25z\' fill=\'%230066FF\' opacity=\'0.4\'/%3E%3Ctext x=\'50%25\' y=\'82%25\' font-family=\'sans-serif\' font-size=\'14\' fill=\'%2394A3B8\' text-anchor=\'middle\' font-weight=\'600\'%3EAPPLE IPHONE 15 PRO MAX%3C/text%3E%3C/svg%3E';">
               <span class="badge bg-surface-subtle text-primary small mb-1">Apple</span>
               <h5 class="font-heading fw-bold fs-6 mb-1">iPhone 15 Pro Max</h5>
               <div class="small text-muted mb-2">Titanium • A17 Pro</div>
@@ -688,19 +695,20 @@
                 <span class="text-muted" style="font-size: 0.75rem;">From</span>
                 <div class="fw-bold text-primary-emphasis">₹1,899</div>
               </div>
-              <a href="explore.html?gadget=iphone-15-pro-max" class="btn btn-sm btn-outline-primary py-1 px-2 rounded">
-                Services <i class="bi bi-chevron-right"></i>
+              <a href="explore.html?gadget=iphone-15-pro-max" class="btn btn-sm btn-outline-primary py-1 px-2 rounded d-inline-flex align-items-center justify-content-center text-center">
+                Services <i class="bi bi-chevron-right ms-1"></i>
               </a>
             </div>
           </div>
         </div>
 
         <!-- Gadget 2 -->
-        <div class="col-6 col-md-4 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3">
           <div class="voltara-card h-100 p-3 d-flex flex-column justify-content-between">
             <div>
               <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80"
-                class="gadget-card-img mb-3" alt="MacBook Pro 16">
+                class="gadget-card-img mb-3" alt="MacBook Pro 16"
+                onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 400 250\' width=\'100%25\' height=\'100%25\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23141A27\'/%3E%3Cpath d=\'M200 80a35 35 0 0 1 35 35v10a35 35 0 0 1-70 0v-10a35 35 0 0 1 35-35zm-50 90h100c15 0 25 10 25 25v15H125v-15c0-15 10-25 25-25z\' fill=\'%230066FF\' opacity=\'0.4\'/%3E%3Ctext x=\'50%25\' y=\'82%25\' font-family=\'sans-serif\' font-size=\'14\' fill=\'%2394A3B8\' text-anchor=\'middle\' font-weight=\'600\'%3EMACBOOK PRO 16%3C/text%3E%3C/svg%3E';">
               <span class="badge bg-surface-subtle text-primary small mb-1">Apple</span>
               <h5 class="font-heading fw-bold fs-6 mb-1">MacBook Pro 16" (M3 Max)</h5>
               <div class="small text-muted mb-2">Liquid Retina XDR</div>
@@ -711,19 +719,20 @@
                 <span class="text-muted" style="font-size: 0.75rem;">From</span>
                 <div class="fw-bold text-primary-emphasis">₹2,499</div>
               </div>
-              <a href="explore.html?gadget=macbook-pro-m3" class="btn btn-sm btn-outline-primary py-1 px-2 rounded">
-                Services <i class="bi bi-chevron-right"></i>
+              <a href="explore.html?gadget=macbook-pro-m3" class="btn btn-sm btn-outline-primary py-1 px-2 rounded d-inline-flex align-items-center justify-content-center text-center">
+                Services <i class="bi bi-chevron-right ms-1"></i>
               </a>
             </div>
           </div>
         </div>
 
         <!-- Gadget 3 -->
-        <div class="col-6 col-md-4 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3">
           <div class="voltara-card h-100 p-3 d-flex flex-column justify-content-between">
             <div>
               <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=400&q=80"
-                class="gadget-card-img mb-3" alt="Sony PlayStation 5 Slim">
+                class="gadget-card-img mb-3" alt="Sony PlayStation 5 Slim"
+                onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 400 250\' width=\'100%25\' height=\'100%25\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23141A27\'/%3E%3Cpath d=\'M200 80a35 35 0 0 1 35 35v10a35 35 0 0 1-70 0v-10a35 35 0 0 1 35-35zm-50 90h100c15 0 25 10 25 25v15H125v-15c0-15 10-25 25-25z\' fill=\'%2300D2FF\' opacity=\'0.4\'/%3E%3Ctext x=\'50%25\' y=\'82%25\' font-family=\'sans-serif\' font-size=\'14\' fill=\'%2394A3B8\' text-anchor=\'middle\' font-weight=\'600\'%3EPS5 SLIM%3C/text%3E%3C/svg%3E';">
               <span class="badge bg-surface-subtle text-primary small mb-1">Sony</span>
               <h5 class="font-heading fw-bold fs-6 mb-1">PlayStation 5 Slim</h5>
               <div class="small text-muted mb-2">HDMI 2.1 • Liquid Metal</div>
@@ -734,19 +743,20 @@
                 <span class="text-muted" style="font-size: 0.75rem;">From</span>
                 <div class="fw-bold text-primary-emphasis">₹1,499</div>
               </div>
-              <a href="explore.html?gadget=ps5-slim-pro" class="btn btn-sm btn-outline-primary py-1 px-2 rounded">
-                Services <i class="bi bi-chevron-right"></i>
+              <a href="explore.html?gadget=ps5-slim-pro" class="btn btn-sm btn-outline-primary py-1 px-2 rounded d-inline-flex align-items-center justify-content-center text-center">
+                Services <i class="bi bi-chevron-right ms-1"></i>
               </a>
             </div>
           </div>
         </div>
 
         <!-- Gadget 4 -->
-        <div class="col-6 col-md-4 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3">
           <div class="voltara-card h-100 p-3 d-flex flex-column justify-content-between">
             <div>
               <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=400&q=80"
-                class="gadget-card-img mb-3" alt="Sony Alpha A7 IV">
+                class="gadget-card-img mb-3" alt="Sony Alpha A7 IV"
+                onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 400 250\' width=\'100%25\' height=\'100%25\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23141A27\'/%3E%3Cpath d=\'M200 80a35 35 0 0 1 35 35v10a35 35 0 0 1-70 0v-10a35 35 0 0 1 35-35zm-50 90h100c15 0 25 10 25 25v15H125v-15c0-15 10-25 25-25z\' fill=\'%230066FF\' opacity=\'0.4\'/%3E%3Ctext x=\'50%25\' y=\'82%25\' font-family=\'sans-serif\' font-size=\'14\' fill=\'%2394A3B8\' text-anchor=\'middle\' font-weight=\'600\'%3ESONY ALPHA A7 IV%3C/text%3E%3C/svg%3E';">
               <span class="badge bg-surface-subtle text-primary small mb-1">Sony</span>
               <h5 class="font-heading fw-bold fs-6 mb-1">Alpha A7 IV Full-Frame</h5>
               <div class="small text-muted mb-2">33MP Exmor R • BIONZ XR</div>
@@ -757,8 +767,8 @@
                 <span class="text-muted" style="font-size: 0.75rem;">From</span>
                 <div class="fw-bold text-primary-emphasis">₹2,999</div>
               </div>
-              <a href="explore.html?gadget=sony-a7-iv" class="btn btn-sm btn-outline-primary py-1 px-2 rounded">
-                Services <i class="bi bi-chevron-right"></i>
+              <a href="explore.html?gadget=sony-a7-iv" class="btn btn-sm btn-outline-primary py-1 px-2 rounded d-inline-flex align-items-center justify-content-center text-center">
+                Services <i class="bi bi-chevron-right ms-1"></i>
               </a>
             </div>
           </div>
@@ -991,6 +1001,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- Universal Back to Top Button -->
+  <a href="#" class="voltara-back-to-top" aria-label="Back to Top"><i class="bi bi-chevron-up"></i></a>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

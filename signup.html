@@ -102,13 +102,23 @@
             <!-- Password Field (Separate Line) -->
             <div>
               <label class="input-label-custom" for="signupPassword">Password <span class="text-danger">*</span></label>
-              <input type="password" id="signupPassword" class="form-control-custom" placeholder="••••••••" required autocomplete="new-password">
+              <div class="input-group">
+                <input type="password" id="signupPassword" class="form-control form-control-custom" placeholder="••••••••" required autocomplete="new-password">
+                <button type="button" class="btn btn-outline-secondary password-toggle-btn border-medium" aria-label="Toggle password visibility">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+              </div>
             </div>
 
             <!-- Confirm Password Field (Separate Line) -->
             <div>
               <label class="input-label-custom" for="signupConfirmPassword">Confirm Password <span class="text-danger">*</span></label>
-              <input type="password" id="signupConfirmPassword" class="form-control-custom" placeholder="••••••••" required autocomplete="new-password">
+              <div class="input-group">
+                <input type="password" id="signupConfirmPassword" class="form-control form-control-custom" placeholder="••••••••" required autocomplete="new-password">
+                <button type="button" class="btn btn-outline-secondary password-toggle-btn border-medium" aria-label="Toggle confirm password visibility">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+              </div>
             </div>
           </div>
 
@@ -150,9 +160,14 @@
   <!-- Auth Footer -->
   <footer class="py-3 border-top border-subtle text-center small text-muted">
     <div class="container-custom">
-      © 2026 VOLTARA Inc. • <a href="index.html" class="text-secondary">Home</a> • <a href="explore.html" class="text-secondary">Services</a> • <a href="contact.html" class="text-secondary">Contact</a>
+      © 2026 VOLTARA Inc. • <a href="index.html" class="text-secondary">Home</a> • <a href="about.html" class="text-secondary">About</a> • <a href="explore.html" class="text-secondary">Services</a> • <a href="contact.html" class="text-secondary">Contact</a>
     </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="voltara-back-to-top" id="voltaraBackToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/data.js"></script>

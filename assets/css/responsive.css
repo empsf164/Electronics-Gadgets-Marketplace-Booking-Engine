@@ -53,44 +53,137 @@
 
 /* --------------------------------------------------------------------------
    TABLET & 1024PX VIEWPORTS (768px to 1024px)
-   Align 2 cards in one row and center-align the last odd number card
+   - Align 2 cards in one row and center-align the last odd number card
+   - Align 2x2 footer columns at 1024px
+   - Align host page hero and cards at 1024px & tab view with high contrast
+   - Align book a service page and its summary cards at 1024px
    -------------------------------------------------------------------------- */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* 2 Cards in one row across all sections in all pages */
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-lg-4"],
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-lg-3"],
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-4"],
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-3"],
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-6"],
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-sm-6"],
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-6"],
+  /* 2 Cards in one row for card grids across sections */
   #homeServicesGrid > div,
   #marketplaceResultsGrid > div:not(.col-12),
   .hero-stats-banner .row > div,
   .why-voltara-section .row > div,
-  .row:not(.marketplace-main-row) > div:has(> .host-card),
-  .row:not(.marketplace-main-row) > div:has(> .contact-social-card) {
+  .device-ecosystem-grid > div,
+  .equipment-grid > div,
+  .host-grid > div,
+  .row:not(.voltara-footer .row):not(.booking-card-wrapper .row):not(.booking-main-row):not(.host-profile-hero .row):not(.host-main-layout):not(.host-setup-layout):not(.service-main-row):not(.auth-row):not(.marketplace-main-row) > .col-md-6,
+  .row:not(.voltara-footer .row):not(.booking-card-wrapper .row):not(.booking-main-row):not(.host-profile-hero .row):not(.host-main-layout):not(.host-setup-layout):not(.service-main-row):not(.auth-row):not(.marketplace-main-row) > .col-lg-4,
+  .row:not(.voltara-footer .row):not(.booking-card-wrapper .row):not(.booking-main-row):not(.host-profile-hero .row):not(.host-main-layout):not(.host-setup-layout):not(.service-main-row):not(.auth-row):not(.marketplace-main-row) > .col-lg-3,
+  .row:not(.voltara-footer .row):not(.booking-card-wrapper .row):not(.booking-main-row):not(.host-profile-hero .row):not(.host-main-layout):not(.host-setup-layout):not(.service-main-row):not(.auth-row):not(.marketplace-main-row) > div:has(> .host-card),
+  .row:not(.voltara-footer .row):not(.booking-card-wrapper .row):not(.booking-main-row):not(.host-profile-hero .row):not(.host-main-layout):not(.host-setup-layout):not(.service-main-row):not(.auth-row):not(.marketplace-main-row) > div:has(> .contact-social-card) {
     flex: 0 0 50% !important;
     max-width: 50% !important;
     width: 50% !important;
   }
 
-  /* Last odd number card in center alignment */
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-lg-4"]:last-child:nth-child(odd),
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-lg-3"]:last-child:nth-child(odd),
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-4"]:last-child:nth-child(odd),
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-3"]:last-child:nth-child(odd),
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-md-6"]:last-child:nth-child(odd),
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-sm-6"]:last-child:nth-child(odd),
-  .row:not(.voltara-footer .row):not(.booking-stepper-header .row):not(.auth-row):not(.marketplace-main-row) > [class*="col-6"]:last-child:nth-child(odd),
+  /* Center alignment for last odd card */
   #homeServicesGrid > div:last-child:nth-child(odd),
   #marketplaceResultsGrid > div:not(.col-12):last-child:nth-child(odd),
   .hero-stats-banner .row > div:last-child:nth-child(odd),
   .why-voltara-section .row > div:last-child:nth-child(odd),
-  .row:not(.marketplace-main-row) > div:has(> .host-card):last-child:nth-child(odd),
-  .row:not(.marketplace-main-row) > div:has(> .contact-social-card):last-child:nth-child(odd) {
+  .device-ecosystem-grid > div:last-child:nth-child(odd),
+  .row:not(.voltara-footer .row):not(.booking-card-wrapper .row):not(.booking-main-row):not(.host-profile-hero .row):not(.host-main-layout):not(.host-setup-layout):not(.service-main-row):not(.auth-row):not(.marketplace-main-row) > div:has(> .host-card):last-child:nth-child(odd),
+  .row:not(.voltara-footer .row):not(.booking-card-wrapper .row):not(.booking-main-row):not(.host-profile-hero .row):not(.host-main-layout):not(.host-setup-layout):not(.service-main-row):not(.auth-row):not(.marketplace-main-row) > div:has(> .contact-social-card):last-child:nth-child(odd) {
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+
+  /* 14. Footer 2*2 layout in 1024px & tablet */
+  .voltara-footer .row > div,
+  .voltara-footer .row > .col-lg-4,
+  .voltara-footer .row > .col-6,
+  .voltara-footer .row > .col-lg-2 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* 6 & 7 & 11. Host page hero card & main layout alignment at 1024px & tab view */
+  .host-profile-hero-card .row,
+  .host-hero-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    gap: 1.25rem !important;
+  }
+
+  .host-hero-avatar-col {
+    flex: 0 0 auto !important;
+  }
+
+  .host-hero-info-col {
+    flex: 1 1 300px !important;
+  }
+
+  .host-hero-actions-col {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Main host layout columns span full width on tablet when stacked */
+  .host-main-layout > .col-lg-8,
+  .host-main-layout > .col-lg-4,
+  .host-setup-layout > .col-lg-7,
+  .host-setup-layout > .col-lg-5,
+  .service-main-row > .col-lg-7,
+  .service-main-row > .col-lg-5 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* High contrast text on host page at 1024px */
+  .host-page-section,
+  .host-details-container,
+  .host-page-content {
+    color: var(--text-primary);
+  }
+
+  .host-page-content .text-muted,
+  .host-details-container .text-muted,
+  .host-card .text-muted {
+    color: #94A3B8 !important;
+  }
+
+  .host-page-content .text-secondary,
+  .host-details-container .text-secondary,
+  .host-card .text-secondary {
+    color: #CBD5E1 !important;
+  }
+
+  .host-page-content .stat-metric-label {
+    color: #E2E8F0 !important;
+    font-weight: 600 !important;
+  }
+
+  /* 10 & 13. Book a Service page alignment at 1024px & tab view */
+  .booking-card-wrapper {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .booking-card-wrapper > .row > .col-lg-8,
+  .booking-card-wrapper > .row > .col-lg-4,
+  .booking-main-row > .col-lg-8,
+  .booking-main-row > .col-lg-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    border-right: none !important;
+  }
+
+  .booking-stepper-header {
+    padding: 1.25rem 1.5rem !important;
+  }
+
+  .booking-panel-step {
+    padding: 2rem 1.75rem !important;
   }
 }
 
@@ -130,6 +223,9 @@
 
 /* --------------------------------------------------------------------------
    MOBILE SCREENS (<= 767px)
+   - 1. Home page hero button size identical in mobile view
+   - 3. Device ecosystem 1 card in 1 row on mobile view
+   - 10. Book a service page tags aligned in mobile view
    -------------------------------------------------------------------------- */
 @media (max-width: 767.98px) {
   :root {
@@ -148,6 +244,40 @@
     font-size: 1.4rem;
   }
 
+  /* 1. Hero action buttons same size on mobile view */
+  .hero-action-buttons,
+  .hero-section .d-flex.flex-wrap.align-items-center.gap-3 {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+
+  .hero-action-buttons > a,
+  .hero-section .d-flex.flex-wrap.align-items-center.gap-3 > a {
+    width: 100% !important;
+    flex: 1 1 100% !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0.85rem 1.25rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* 3. Device ecosystem section: 1 card per row on mobile */
+  .device-ecosystem-section .col-6,
+  .device-ecosystem-section [class*="col-"],
+  .device-ecosystem-grid > div,
+  .popular-gadgets-grid > div,
+  .row:has(.gadget-card-img) > div {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   /* Marketplace Results on Mobile: 1 card per row */
   #marketplaceResultsGrid > div {
     flex: 0 0 100% !important;
@@ -155,6 +285,33 @@
     width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+
+  /* 10. Book a service page: Tag and slot buttons alignment on mobile */
+  .slot-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.6rem !important;
+    width: 100% !important;
+  }
+
+  .time-slot-btn {
+    width: 100% !important;
+    min-width: unset !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0.6rem 0.5rem !important;
+  }
+
+  .slot-tag {
+    display: inline-block !important;
+    text-align: center !important;
+    margin-top: 3px !important;
+    white-space: nowrap !important;
+    font-size: 0.68rem !important;
   }
 
   /* Stepper mobile compaction */
@@ -172,7 +329,7 @@
 
   .step-label {
     font-size: 0.68rem;
-    display: none; /* Keep cleaner node dots on small mobile */
+    display: none;
   }
 
   .booking-step-item.active .step-label {
@@ -194,13 +351,8 @@
     font-size: 0.82rem;
   }
 
-  .time-slot-btn {
-    min-width: 90px;
-    padding: 0.5rem 0.65rem;
-  }
-
   .slot-time {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
   }
 
   /* Forms & Cards */
@@ -228,6 +380,14 @@
     padding: 3rem 0 1.5rem 0;
     margin-top: 3rem;
   }
+
+  .voltara-back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -251,8 +411,8 @@
     font-size: 0.78rem;
   }
 
-  .time-slot-btn {
-    width: 100%;
+  .slot-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 

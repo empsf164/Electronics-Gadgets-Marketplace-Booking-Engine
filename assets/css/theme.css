@@ -71,10 +71,10 @@
   --border-accent: rgba(0, 102, 255, 0.45);
   --border-glass: rgba(255, 255, 255, 0.09);
 
-  /* Typography */
+  /* Typography - Enhanced Contrast for High Accessibility */
   --text-primary: #F8FAFC;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
   --text-inverse: #090D16;
 
   /* Shadows */
@@ -85,10 +85,61 @@
   --shadow-glow-cyan: 0 0 25px rgba(0, 210, 255, 0.2);
 
   /* Component Accents */
-  --card-highlight: rgba(255, 255, 255, 0.03);
-  --badge-bg: rgba(255, 255, 255, 0.06);
-  --badge-text: #E2E8F0;
+  --card-highlight: rgba(255, 255, 255, 0.05);
+  --badge-bg: rgba(255, 255, 255, 0.1);
+  --badge-text: #F1F5F9;
   --code-bg: #141A27;
+}
+
+/* Dark Mode Global Contrast Enhancements */
+[data-theme="dark"] .text-muted,
+[data-theme="dark"] .small.text-muted {
+  color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .text-secondary,
+[data-theme="dark"] p.text-secondary {
+  color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .text-primary-emphasis {
+  color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .badge.bg-surface-subtle {
+  background-color: #1E293B !important;
+  color: #E2E8F0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+[data-theme="dark"] .badge.bg-primary-subtle {
+  background-color: rgba(0, 102, 255, 0.25) !important;
+  color: #85C1FF !important;
+  border: 1px solid rgba(0, 102, 255, 0.35) !important;
+}
+
+[data-theme="dark"] .badge.bg-success-subtle {
+  background-color: rgba(16, 185, 129, 0.25) !important;
+  color: #4ADE80 !important;
+  border: 1px solid rgba(16, 185, 129, 0.35) !important;
+}
+
+[data-theme="dark"] .badge.bg-warning-subtle {
+  background-color: rgba(245, 158, 11, 0.25) !important;
+  color: #FCD34D !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+}
+
+[data-theme="dark"] .badge.bg-info-subtle {
+  background-color: rgba(56, 189, 248, 0.25) !important;
+  color: #7DD3FC !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+}
+
+[data-theme="dark"] .badge.bg-danger-subtle {
+  background-color: rgba(239, 68, 68, 0.25) !important;
+  color: #FCA5A5 !important;
+  border: 1px solid rgba(239, 68, 68, 0.35) !important;
 }
 
 /* --------------------------------------------------------------------------

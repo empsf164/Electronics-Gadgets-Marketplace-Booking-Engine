@@ -288,14 +288,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Broken Image Fallback Safeguard
-  const defaultFallbackImage = "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80";
-  document.querySelectorAll('img').forEach(img => {
-    img.addEventListener('error', function() {
-      if (!this.getAttribute('data-failed')) {
-        this.setAttribute('data-failed', 'true');
-        this.src = defaultFallbackImage;
+  // 4. Broken Image Fallback Safeguard (High Reliability SVG Data URI)
+  const svgFallback = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250' width='100%25' height='100%25'%3E%3Crect width='100%25' height='100%25' fill='%23141A27'/%3E%3Cpath d='M200 80a35 35 0 0 1 35 35v10a35 35 0 0 1-70 0v-10a35 35 0 0 1 35-35zm-50 90h100c15 0 25 10 25 25v15H125v-15c0-15 10-25 25-25z' fill='%230066FF' opacity='0.4'/%3E%3Ctext x='50%25' y='82%25' font-family='sans-serif' font-size='14' fill='%2394A3B8' text-anchor='middle' font-weight='600'%3EVOLTARA VERIFIED TECH%3C/text%3E%3C/svg%3E";
+  
+  const setupImageFallback = () => {
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('error', function() {
+        if (!this.getAttribute('data-failed')) {
+          this.setAttribute('data-failed', 'true');
+          this.src = svgFallback;
+        }
+      });
+      // In case image failed before listener attached
+      if (img.complete && img.naturalWidth === 0) {
+        img.src = svgFallback;
       }
+    });
+  };
+  setupImageFallback();
+
+  // 4b. Universal Back to Top Button Controller
+  let backToTopBtn = document.querySelector('.voltara-back-to-top');
+  if (!backToTopBtn) {
+    backToTopBtn = document.createElement('a');
+    backToTopBtn.href = '#';
+    backToTopBtn.className = 'voltara-back-to-top';
+    backToTopBtn.setAttribute('aria-label', 'Back to Top');
+    backToTopBtn.innerHTML = '<i class="bi bi-chevron-up"></i>';
+    document.body.appendChild(backToTopBtn);
+  }
+
+  const toggleBackToTop = () => {
+    if (window.scrollY > 280) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  };
+
+  window.addEventListener('scroll', toggleBackToTop, { passive: true });
+  toggleBackToTop();
+
+  backToTopBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
     });
   });
 
