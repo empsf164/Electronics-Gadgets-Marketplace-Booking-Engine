@@ -415,7 +415,7 @@ const VOLTARA_DATA = {
       name: "Apex Precision Tech Labs",
       tagline: "Master Micro-Soldering & Tier-1 Cleanroom Facility",
       avatar: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80",
-      coverImage: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80",
+      coverImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
       isVerified: true,
       tier: "Master Certified Lab",
       tierBadge: "Master Certified",

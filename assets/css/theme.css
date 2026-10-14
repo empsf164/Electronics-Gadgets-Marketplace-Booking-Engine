@@ -52,6 +52,8 @@
    -------------------------------------------------------------------------- */
 [data-theme="dark"], :root:not([data-theme="light"]) {
   color-scheme: dark;
+  --bs-body-color: #F8FAFC;
+  --bs-body-bg: #07090E;
 
   /* Backgrounds */
   --bg-body: #07090E;
@@ -104,6 +106,49 @@
 
 [data-theme="dark"] .text-primary-emphasis {
   color: #F8FAFC !important;
+}
+
+/* Dark Mode Form Inputs & Text Contrast */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select,
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-control-custom,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .form-select-custom {
+  color: #FFFFFF !important;
+  background-color: var(--bg-surface-input) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus,
+[data-theme="dark"] select:focus,
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-control-custom:focus,
+[data-theme="dark"] .form-select:focus,
+[data-theme="dark"] .form-select-custom:focus {
+  color: #FFFFFF !important;
+  background-color: var(--bg-surface-input) !important;
+  border-color: var(--color-primary) !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.25) !important;
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder,
+[data-theme="dark"] .form-control::placeholder,
+[data-theme="dark"] .form-control-custom::placeholder {
+  color: #94A3B8 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .input-group-text {
+  color: #CBD5E1 !important;
+  background-color: var(--bg-surface-elevated) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
 }
 
 [data-theme="dark"] .badge.bg-surface-subtle {

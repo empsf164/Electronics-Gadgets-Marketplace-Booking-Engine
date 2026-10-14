@@ -488,6 +488,9 @@
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
+  max-width: 1180px;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .booking-stepper-header {
@@ -718,7 +721,9 @@
 /* --------------------------------------------------------------------------
    FORM CONTROLS & INPUTS
    -------------------------------------------------------------------------- */
+.form-control,
 .form-control-custom,
+.form-select,
 .form-select-custom {
   background-color: var(--bg-surface-input);
   border: 1px solid var(--border-medium);
@@ -730,7 +735,15 @@
   width: 100%;
 }
 
+.form-control::placeholder,
+.form-control-custom::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+.form-control:focus,
 .form-control-custom:focus,
+.form-select:focus,
 .form-select-custom:focus {
   border-color: var(--color-primary);
   outline: none;
@@ -882,6 +895,10 @@
 .max-w-600 { max-width: 600px; width: 100%; }
 .max-w-700 { max-width: 700px; width: 100%; }
 .max-w-800 { max-width: 800px; width: 100%; }
+.max-w-900 { max-width: 900px; width: 100%; }
+.max-w-1000 { max-width: 1000px; width: 100%; }
+.max-w-1100 { max-width: 1100px; width: 100%; }
+.max-w-1200 { max-width: 1200px; width: 100%; }
 
 /* Floating Top-Right Theme Toggle on Auth / Standalone Pages */
 .auth-theme-toggle {
@@ -1068,4 +1085,149 @@ a.text-primary:hover {
   border-color: var(--border-accent);
   color: var(--text-primary);
 }
+
+/* --------------------------------------------------------------------------
+   DARK MODE ENHANCEMENTS: CARD CENTERING & SERVICE PAGE CONTRAST
+   -------------------------------------------------------------------------- */
+/* Center cards on Dark Mode & Desktop */
+[data-theme="dark"] .booking-card-wrapper,
+.booking-card-wrapper {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block;
+}
+
+[data-theme="dark"] .virtual-card-preview,
+.virtual-card-preview {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Service Details Page Text Contrast on Dark Mode */
+[data-theme="dark"] #serviceDetailTitle,
+[data-theme="dark"] h1.display-6 {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] #serviceFullDesc,
+[data-theme="dark"] .service-description-text {
+  color: #E2E8F0 !important;
+}
+
+[data-theme="dark"] #serviceIncludedList li,
+[data-theme="dark"] #serviceNotIncludedList li {
+  color: #E2E8F0 !important;
+}
+
+[data-theme="dark"] #serviceIncludedList li .text-success {
+  color: #34D399 !important;
+}
+
+[data-theme="dark"] #serviceNotIncludedList li .text-danger {
+  color: #F87171 !important;
+}
+
+[data-theme="dark"] .accordion-button {
+  color: #F8FAFC !important;
+  background-color: var(--bg-surface-elevated) !important;
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+  color: #60A5FA !important;
+  background-color: var(--bg-surface-subtle) !important;
+}
+
+[data-theme="dark"] .accordion-body {
+  color: #CBD5E1 !important;
+  background-color: var(--bg-surface-elevated) !important;
+}
+
+[data-theme="dark"] .input-label-custom {
+  color: #E2E8F0 !important;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .form-select-custom,
+[data-theme="dark"] .form-control-custom {
+  color: #FFFFFF !important;
+  background-color: var(--bg-surface-subtle) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+[data-theme="dark"] #quoteUrgencyContainer label {
+  background-color: var(--bg-surface-subtle) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #F8FAFC !important;
+}
+
+[data-theme="dark"] #quoteUrgencyContainer label .text-muted {
+  color: #94A3B8 !important;
+}
+
+[data-theme="dark"] #quoteUrgencyContainer label .text-primary {
+  color: #38BDF8 !important;
+}
+
+[data-theme="dark"] .breadcrumb-item a {
+  color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .breadcrumb-item.active {
+  color: #60A5FA !important;
+}
+
+/* Service & Marketplace Page Input Field Visibility in Dark Mode */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select,
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-control-custom,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .form-select-custom,
+[data-theme="dark"] #marketplaceSearchInput {
+  color: #FFFFFF !important;
+  background-color: var(--bg-surface-input) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus,
+[data-theme="dark"] select:focus,
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-control-custom:focus,
+[data-theme="dark"] .form-select:focus,
+[data-theme="dark"] .form-select-custom:focus,
+[data-theme="dark"] #marketplaceSearchInput:focus {
+  color: #FFFFFF !important;
+  background-color: var(--bg-surface-input) !important;
+  border-color: var(--color-primary) !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.25) !important;
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder,
+[data-theme="dark"] .form-control::placeholder,
+[data-theme="dark"] .form-control-custom::placeholder,
+[data-theme="dark"] #marketplaceSearchInput::placeholder {
+  color: #94A3B8 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #94A3B8 !important;
+}
+
+[data-theme="dark"] #globalSearchInput,
+#globalSearchInput {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+[data-theme="dark"] #globalSearchInput::placeholder,
+#globalSearchInput::placeholder {
+  color: #94A3B8 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #94A3B8 !important;
+}
+
+
 

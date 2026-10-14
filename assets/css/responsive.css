@@ -345,6 +345,32 @@
     padding: 1.25rem 1rem;
   }
 
+  /* 5. Book a service page: Action buttons aligned neatly after third step (and all steps) on mobile */
+  .booking-panel-step[data-step="3"] .d-flex.justify-content-between,
+  .booking-panel-step .d-flex.justify-content-between,
+  .booking-panel-step .d-flex.justify-content-end {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    margin-top: 1.5rem !important;
+    align-items: stretch !important;
+  }
+
+  .booking-panel-step .d-flex.justify-content-between > button,
+  .booking-panel-step .d-flex.justify-content-between > a,
+  .booking-panel-step .d-flex.justify-content-end > button,
+  .booking-panel-step .d-flex.justify-content-end > a {
+    width: 100% !important;
+    min-width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0.85rem 1.25rem !important;
+    font-size: 0.95rem !important;
+  }
+
   /* Calendar responsiveness */
   .calendar-day {
     height: 42px;
@@ -379,6 +405,33 @@
   .voltara-footer {
     padding: 3rem 0 1.5rem 0;
     margin-top: 3rem;
+  }
+
+  /* 2. Footer Section 1*1 alignment on mobile view */
+  .voltara-footer .row > div,
+  .voltara-footer .row > .col-6,
+  .voltara-footer .row > .col-lg-2,
+  .voltara-footer .row > .col-lg-4,
+  .voltara-footer .row > [class*="col-"] {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .voltara-footer .row > div:last-child {
+    margin-bottom: 1rem !important;
+  }
+
+  .voltara-footer .border-top {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  .voltara-footer .border-top .d-flex {
+    flex-wrap: wrap !important;
+    gap: 0.5rem 1.25rem !important;
   }
 
   .voltara-back-to-top {
