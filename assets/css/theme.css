@@ -187,6 +187,35 @@
   border: 1px solid rgba(239, 68, 68, 0.35) !important;
 }
 
+/* Dark Mode Deposit Summary Card (Booking Step 04)
+   Bootstrap's .bg-primary-subtle stays light blue without data-bs-theme,
+   which clashed with the light dark-mode text colors. */
+[data-theme="dark"] .deposit-summary-card {
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.18) 0%, rgba(0, 210, 255, 0.08) 100%) !important;
+  border-color: rgba(0, 102, 255, 0.4) !important;
+}
+
+[data-theme="dark"] .deposit-summary-card .text-muted {
+  color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .deposit-summary-card .text-secondary {
+  color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .deposit-summary-card .text-primary {
+  color: #6CB4FF !important;
+}
+
+[data-theme="dark"] .deposit-summary-card .text-primary-emphasis {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .deposit-summary-card .badge.bg-primary {
+  background-color: #0066FF !important;
+  color: #FFFFFF !important;
+}
+
 /* --------------------------------------------------------------------------
    LIGHT THEME
    -------------------------------------------------------------------------- */
